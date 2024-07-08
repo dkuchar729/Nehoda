@@ -1,0 +1,556 @@
+hodina;druhNehody;zavineniNehody;alkohol;pricinaNehody;povrchVozovky;povetrnostniPodminky;viditelnost;deleniKomunikace;SmerovePomery;druhKomunikace;den;maxPrumTeplota;minPrumTeplota;prumSrazky
+12;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;6;11.8;6.1;1.5
+16;prekazka;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;kruhovy objezd;2.trida;6;11.8;6.1;1.5
+13;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;ucelova;6;11.8;6.1;1.5
+16;prekazka;ridic;ne;rychlost;mokry;dest;ztizena pocasim;ctyrpruh;zatacka;dalnice;6;11.8;6.1;1.5
+14;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;6;11.8;6.1;1.5
+17;vozidlo;ridic;ne;predjizdeni;suchy;neztizene;neztizena;dvoupruh;zatacka;3.trida;6;11.8;6.1;1.5
+18;vozidlo;ridic;ne;nedani prednosti;mokry;neztizene;neztizena;dvoupruh;krizovatka;3.trida;6;11.8;6.1;1.5
+15;prekazka;ridic;ne;zpusob jizdy;mokry;neztizene;neztizena;dvoupruh;primy usek;2.trida;7;7.5;1.5;6.0
+14;chodec;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;dalnice;7;7.5;1.5;6.0
+14;vozidlo;ridic;ne;nedani prednosti;mokry;slaby dest;neztizena;dvoupruh;krizovatka;2.trida;7;7.5;1.5;6.0
+17;vozidlo;ridic;neznamo;zpusob jizdy;mokry;neztizene;neztizena;dvoupruh;krizovatka;mistni;7;7.5;1.5;6.0
+7;ostatni;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;zatacka;3.trida;1;2.9;-0.6;0.0
+16;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;1;2.9;-0.6;0.0
+14;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;ucelova;1;2.9;-0.6;0.0
+9;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;1;2.9;-0.6;0.0
+18;ostatni;ridic;neznamo;rychlost;suchy;neztizene;neztizena;dvoupruh;zatacka;2.trida;2;4.3;-2.7;0.0
+14;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;3.trida;2;4.3;-2.7;0.0
+12;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;2.trida;2;4.3;-2.7;0.0
+11;prekazka;ridic;neznamo;predjizdeni;suchy;neztizene;neztizena;dvoupruh;zatacka;2.trida;2;4.3;-2.7;0.0
+15;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;kruhovy objezd;1.trida;2;4.3;-2.7;0.0
+6;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;zatacka;1.trida;2;4.3;-2.7;0.0
+7;chodec;chodec;ne;nezavineni ridicem;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;2;4.3;-2.7;0.0
+13;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;krizovatka;2.trida;2;4.3;-2.7;0.0
+15;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;zatacka;1.trida;2;4.3;-2.7;0.0
+11;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;3;5.2;-6.1;0.0
+14;ostatni;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;3;5.2;-6.1;0.0
+8;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ctyrpruh;primy usek;dalnice;3;5.2;-6.1;0.0
+12;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;3;5.2;-6.1;0.0
+12;prekazka;ridic;ne;rychlost;suchy;neztizene;neztizena;ctyrpruh;primy usek;dalnice;3;5.2;-6.1;0.0
+13;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;3;5.2;-6.1;0.0
+10;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;ctyrpruh;krizovatka;1.trida;3;5.2;-6.1;0.0
+13;vozidlo;ridic;ne;predjizdeni;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;3;5.2;-6.1;0.0
+17;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;3;5.2;-6.1;0.0
+13;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;vicepruh;krizovatka;1.trida;4;8.9;-4.8;0.0
+18;ostatni;ridic;ne;rychlost;ostatni;neztizene;neztizena;dvoupruh;primy usek;mistni;4;8.9;-4.8;0.0
+9;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;4;8.9;-4.8;0.0
+10;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;4;8.9;-4.8;0.0
+9;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;4;8.9;-4.8;0.0
+22;prekazka;ridic;ne;rychlost;suchy;neztizene;neztizena;ostatni;zatacka;2.trida;4;8.9;-4.8;0.0
+8;vozidlo;ridic;neznamo;predjizdeni;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;4;8.9;-4.8;0.0
+23;zvire;zvire;neznamo;nezavineni ridicem;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;4;8.9;-4.8;0.0
+8;prekazka;ridic;neznamo;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;5;11.0;-3.1;0.3
+2;prekazka;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;5;11.0;-3.1;0.3
+8;ostatni;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;5;11.0;-3.1;0.3
+15;vozidlo;ridic;ne;nedani prednosti;suchy;ostatni;neztizena;dvoupruh;krizovatka;1.trida;5;11.0;-3.1;0.3
+0;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;krizovatka;1.trida;5;11.0;-3.1;0.3
+15;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;tripruh;krizovatka;2.trida;5;11.0;-3.1;0.3
+8;vozidlo;ridic;ne;zpusob jizdy;mokry;slaby dest;neztizena;dvoupruh;primy usek;1.trida;6;5.5;1.1;5.7
+4;prekazka;ridic;ne;rychlost;mokry;slaby dest;neztizena;dvoupruh;primy usek;1.trida;6;5.5;1.1;5.7
+9;vozidlo;ridic;ne;nedani prednosti;mokry;slaby dest;ztizena pocasim;dvoupruh;krizovatka;1.trida;6;5.5;1.1;5.7
+9;ostatni;ridic;ne;rychlost;mokry;slaby dest;neztizena;dvoupruh;primy usek;1.trida;7;7.1;2.1;2.3
+13;prekazka;ridic;ne;rychlost;mokry;slaby dest;neztizena;ostatni;zatacka;3.trida;7;7.1;2.1;2.3
+13;prekazka;ridic;ne;rychlost;mokry;neztizene;neztizena;dvoupruh;primy usek;2.trida;7;7.1;2.1;2.3
+20;vozidlo;ridic;ne;nedani prednosti;mokry;neztizene;neztizena;dvoupruh;krizovatka;1.trida;7;7.1;2.1;2.3
+11;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;vicepruh;krizovatka;1.trida;1;12.9;1.6;0.4
+14;ostatni;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;1;12.9;1.6;0.4
+18;prekazka;ridic;ne;rychlost;suchy;neztizene;svitani/soumrak;dvoupruh;primy usek;3.trida;1;12.9;1.6;0.4
+12;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;1;12.9;1.6;0.4
+17;ostatni;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;1;12.9;1.6;0.4
+13;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;zatacka;3.trida;1;12.9;1.6;0.4
+16;ostatni;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;zatacka;2.trida;1;12.9;1.6;0.4
+15;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;1;12.9;1.6;0.4
+4;prekazka;ridic;ano;rychlost;mokry;ostatni;ztizena pocasim;dvoupruh;primy usek;2.trida;1;12.9;1.6;0.4
+17;vozidlo;ridic;ne;zpusob jizdy;mokry;slaby dest;ztizena pocasim;tripruh;primy usek;mistni;2;11.2;1.5;3.6
+3;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;2;11.2;1.5;3.6
+8;prekazka;ridic;ne;zpusob jizdy;mokry;slaby dest;neztizena;ostatni;krizovatka;mistni;2;11.2;1.5;3.6
+7;vozidlo;ridic;ne;zpusob jizdy;suchy;ostatni;neztizena;ctyrpruh;primy usek;mistni;2;11.2;1.5;3.6
+18;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;2.trida;2;11.2;1.5;3.6
+12;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;2;11.2;1.5;3.6
+16;prekazka;ridic;ne;rychlost;mokry;neztizene;neztizena;dvoupruh;zatacka;3.trida;2;11.2;1.5;3.6
+9;vozidlo;ridic;ne;zpusob jizdy;mokry;neztizene;neztizena;ostatni;primy usek;mistni;2;11.2;1.5;3.6
+12;prekazka;ridic;ne;zpusob jizdy;mokry;dest;neztizena;ostatni;zatacka;mistni;2;11.2;1.5;3.6
+14;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;zatacka;mistni;2;11.2;1.5;3.6
+13;vozidlo;ridic;ne;rychlost;mokry;slaby dest;ztizena pocasim;dvoupruh;primy usek;1.trida;2;11.2;1.5;3.6
+13;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;tripruh;krizovatka;3.trida;2;11.2;1.5;3.6
+12;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;3;12.2;-0.9;0.5
+18;prekazka;ridic;ne;rychlost;mokry;neztizene;neztizena;dvoupruh;primy usek;1.trida;3;12.2;-0.9;0.5
+13;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;3;12.2;-0.9;0.5
+8;prekazka;ridic;ne;rychlost;ostatni;neztizene;neztizena;dvoupruh;zatacka;mistni;3;12.2;-0.9;0.5
+15;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;3;12.2;-0.9;0.5
+15;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;3;12.2;-0.9;0.5
+8;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;zatacka;1.trida;3;12.2;-0.9;0.5
+8;prekazka;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;3.trida;3;12.2;-0.9;0.5
+10;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ctyrpruh;primy usek;dalnice;4;9.8;5.1;3.4
+17;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;mistni;4;9.8;5.1;3.4
+9;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;ctyrpruh;primy usek;dalnice;4;9.8;5.1;3.4
+9;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;mistni;4;9.8;5.1;3.4
+8;vozidlo;ridic;ne;zavada;mokry;neztizene;neztizena;dvoupruh;primy usek;3.trida;4;9.8;5.1;3.4
+10;chodec;ridic;ne;nedani prednosti;mokry;neztizene;neztizena;dvoupruh;primy usek;mistni;4;9.8;5.1;3.4
+4;vozidlo;ridic;neznamo;zpusob jizdy;naledi/snih;snezeni;ztizena pocasim;dvoupruh;primy usek;mistni;5;5.1;2.5;28.5
+6;chodec;ridic;ne;nedani prednosti;mokry;dest;ztizena pocasim;dvoupruh;primy usek;2.trida;5;5.1;2.5;28.5
+13;ostatni;ridic;neznamo;nedani prednosti;mokry;dest;neztizena;ostatni;primy usek;mistni;5;5.1;2.5;28.5
+15;vozidlo;ridic;ne;zpusob jizdy;mokry;dest;neztizena;vicepruh;primy usek;2.trida;5;5.1;2.5;28.5
+12;vozidlo;ridic;neznamo;zpusob jizdy;mokry;dest;neztizena;ostatni;primy usek;ucelova;5;5.1;2.5;28.5
+6;vozidlo;ridic;ne;zpusob jizdy;mokry;dest;ztizena pocasim;ctyrpruh;primy usek;dalnice;5;5.1;2.5;28.5
+6;vozidlo;ridic;ne;nedani prednosti;mokry;dest;ztizena pocasim;tripruh;krizovatka;1.trida;5;5.1;2.5;28.5
+4;prekazka;ridic;ne;zpusob jizdy;mokry;dest;neztizena;dvoupruh;krizovatka;mistni;5;5.1;2.5;28.5
+9;prekazka;ridic;ne;zpusob jizdy;mokry;dest;neztizena;dvoupruh;primy usek;3.trida;5;5.1;2.5;28.5
+12;prekazka;ridic;ne;zpusob jizdy;mokry;dest;neztizena;dvoupruh;primy usek;1.trida;5;5.1;2.5;28.5
+14;vozidlo;ridic;ne;zpusob jizdy;mokry;dest;ztizena pocasim;dvoupruh;primy usek;3.trida;5;5.1;2.5;28.5
+15;vozidlo;ridic;neznamo;zpusob jizdy;mokry;dest;ztizena pocasim;dvoupruh;primy usek;2.trida;5;5.1;2.5;28.5
+7;vozidlo;ridic;neznamo;zpusob jizdy;mokry;dest;neztizena;dvoupruh;primy usek;3.trida;5;5.1;2.5;28.5
+15;vozidlo;ridic;ne;rychlost;mokry;dest;ztizena pocasim;ctyrpruh;primy usek;dalnice;5;5.1;2.5;28.5
+11;prekazka;ridic;ne;rychlost;mokry;neztizene;neztizena;dvoupruh;zatacka;3.trida;6;7.7;2.4;10.4
+15;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;tripruh;zatacka;mistni;6;7.7;2.4;10.4
+20;prekazka;ridic;ano;rychlost;mokry;neztizene;neztizena;dvoupruh;primy usek;3.trida;6;7.7;2.4;10.4
+16;ostatni;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;6;7.7;2.4;10.4
+13;prekazka;ridic;ano;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;6;7.7;2.4;10.4
+20;chodec;ridic;ano;rychlost;mokry;ostatni;neztizena;dvoupruh;primy usek;mistni;6;7.7;2.4;10.4
+2;prekazka;ridic;ne;zpusob jizdy;mokry;dest;ztizena pocasim;dvoupruh;primy usek;2.trida;6;7.7;2.4;10.4
+15;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;zatacka;mistni;7;11.9;3.1;1.7
+11;prekazka;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;krizovatka;3.trida;1;13.2;3.3;0.4
+9;prekazka;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;1;13.2;3.3;0.4
+6;vozidlo;ridic;ano;nedani prednosti;suchy;neztizene;neztizena;ctyrpruh;primy usek;1.trida;1;13.2;3.3;0.4
+7;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;1;13.2;3.3;0.4
+11;ostatni;ridic;ano;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;zatacka;3.trida;1;13.2;3.3;0.4
+14;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;zatacka;3.trida;1;13.2;3.3;0.4
+7;vozidlo;ridic;ne;predjizdeni;mokry;dest;neztizena;tripruh;zatacka;1.trida;2;9.1;6.2;1.1
+12;ostatni;ridic;ne;rychlost;mokry;dest;ztizena pocasim;dvoupruh;zatacka;2.trida;2;9.1;6.2;1.1
+13;prekazka;ridic;ne;zpusob jizdy;mokry;slaby dest;neztizena;dvoupruh;primy usek;3.trida;2;9.1;6.2;1.1
+11;ostatni;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;2.trida;2;9.1;6.2;1.1
+19;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;2;9.1;6.2;1.1
+10;ostatni;ridic;ne;zpusob jizdy;mokry;dest;neztizena;ostatni;primy usek;mistni;2;9.1;6.2;1.1
+12;vozidlo;ridic;neznamo;zpusob jizdy;mokry;dest;ztizena pocasim;dvoupruh;krizovatka;2.trida;2;9.1;6.2;1.1
+8;vozidlo;ridic;neznamo;zpusob jizdy;mokry;neztizene;neztizena;dvoupruh;primy usek;mistni;2;9.1;6.2;1.1
+13;vozidlo;ridic;neznamo;nedani prednosti;suchy;neztizene;neztizena;ctyrpruh;primy usek;1.trida;2;9.1;6.2;1.1
+9;ostatni;ridic;ne;rychlost;mokry;dest;ztizena pocasim;dvoupruh;zatacka;1.trida;3;9.1;2.4;6.0
+13;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;krizovatka;2.trida;3;9.1;2.4;6.0
+10;vozidlo;ridic;ne;rychlost;mokry;slaby dest;neztizena;dvoupruh;primy usek;3.trida;3;9.1;2.4;6.0
+15;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;ctyrpruh;krizovatka;2.trida;3;9.1;2.4;6.0
+17;ostatni;ridic;ano;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;3;9.1;2.4;6.0
+13;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;3;9.1;2.4;6.0
+16;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;3;9.1;2.4;6.0
+5;prekazka;ridic;ne;zpusob jizdy;mokry;slaby dest;neztizena;dvoupruh;primy usek;mistni;3;9.1;2.4;6.0
+8;vozidlo;ridic;ne;zpusob jizdy;mokry;dest;ztizena pocasim;dvoupruh;primy usek;ucelova;3;9.1;2.4;6.0
+15;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;4;12.6;1.4;2.6
+10;prekazka;ridic;ne;zpusob jizdy;mokry;slaby dest;ztizena pocasim;dvoupruh;primy usek;2.trida;4;12.6;1.4;2.6
+16;prekazka;ridic;ano;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;4;12.6;1.4;2.6
+5;ostatni;ridic;ne;rychlost;mokry;neztizene;neztizena;dvoupruh;zatacka;2.trida;4;12.6;1.4;2.6
+4;vozidlo;ridic;ne;zpusob jizdy;mokry;neztizene;neztizena;dvoupruh;krizovatka;mistni;4;12.6;1.4;2.6
+7;vozidlo;ridic;ne;zpusob jizdy;mokry;dest;neztizena;dvoupruh;primy usek;mistni;4;12.6;1.4;2.6
+11;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;ucelova;4;12.6;1.4;2.6
+13;chodec;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;2.trida;4;12.6;1.4;2.6
+10;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;5;17.4;4.5;0.0
+15;vozidlo;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;5;17.4;4.5;0.0
+17;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;zatacka;mistni;5;17.4;4.5;0.0
+9;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;tripruh;krizovatka;2.trida;5;17.4;4.5;0.0
+11;ostatni;ridic;ne;rychlost;suchy;neztizene;neztizena;ostatni;krizovatka;1.trida;5;17.4;4.5;0.0
+14;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;krizovatka;2.trida;5;17.4;4.5;0.0
+17;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;5;17.4;4.5;0.0
+18;ostatni;zvire;neznamo;nezavineni ridicem;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;5;17.4;4.5;0.0
+11;prekazka;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;5;17.4;4.5;0.0
+11;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;zatacka;mistni;5;17.4;4.5;0.0
+11;vozidlo;ridic;neznamo;predjizdeni;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;5;17.4;4.5;0.0
+8;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;ucelova;5;17.4;4.5;0.0
+13;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;ucelova;5;17.4;4.5;0.0
+17;ostatni;komunikace;neznamo;nezavineni ridicem;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;6;20.0;2.4;0.0
+4;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;6;20.0;2.4;0.0
+19;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;svitani/soumrak;tripruh;krizovatka;2.trida;6;20.0;2.4;0.0
+19;prekazka;ridic;ne;rychlost;suchy;neztizene;neztizena;ostatni;primy usek;3.trida;6;20.0;2.4;0.0
+16;prekazka;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;6;20.0;2.4;0.0
+15;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;6;20.0;2.4;0.0
+17;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;3.trida;6;20.0;2.4;0.0
+14;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;3.trida;6;20.0;2.4;0.0
+14;chodec;chodec;ano;nezavineni ridicem;suchy;neztizene;svitani/soumrak;dvoupruh;primy usek;mistni;6;20.0;2.4;0.0
+1;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;kruhovy objezd;1.trida;6;20.0;2.4;0.0
+1;prekazka;ridic;ano;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;zatacka;3.trida;7;17.1;7.0;1.2
+8;vozidlo;ridic;ne;nedani prednosti;mokry;neztizene;neztizena;dvoupruh;kruhovy objezd;2.trida;7;17.1;7.0;1.2
+14;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;7;17.1;7.0;1.2
+10;ostatni;ridic;ne;rychlost;suchy;neztizene;neztizena;ostatni;zatacka;3.trida;7;17.1;7.0;1.2
+12;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;7;17.1;7.0;1.2
+19;prekazka;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;ucelova;7;17.1;7.0;1.2
+18;prekazka;ridic;ne;rychlost;mokry;neztizene;neztizena;dvoupruh;krizovatka;mistni;7;17.1;7.0;1.2
+21;prekazka;ridic;ne;zpusob jizdy;mokry;neztizene;neztizena;ostatni;primy usek;ucelova;7;17.1;7.0;1.2
+14;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;tripruh;krizovatka;2.trida;7;17.1;7.0;1.2
+11;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;krizovatka;3.trida;7;17.1;7.0;1.2
+22;ostatni;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;zatacka;1.trida;7;17.1;7.0;1.2
+17;ostatni;ridic;ano;zpusob jizdy;mokry;neztizene;neztizena;dvoupruh;zatacka;2.trida;7;17.1;7.0;1.2
+16;ostatni;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;zatacka;3.trida;1;13.2;6.7;5.3
+6;vozidlo;ridic;ne;rychlost;mokry;slaby dest;neztizena;dvoupruh;primy usek;2.trida;1;13.2;6.7;5.3
+17;vozidlo;ridic;ne;zpusob jizdy;ostatni;neztizene;neztizena;ostatni;krizovatka;1.trida;1;13.2;6.7;5.3
+10;prekazka;ridic;ne;zpusob jizdy;mokry;ostatni;neztizena;dvoupruh;primy usek;1.trida;1;13.2;6.7;5.3
+7;vozidlo;ridic;ne;rychlost;mokry;dest;neztizena;dvoupruh;zatacka;2.trida;1;13.2;6.7;5.3
+22;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;1.trida;1;13.2;6.7;5.3
+4;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;2;11.4;3.3;2.0
+7;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;2;11.4;3.3;2.0
+7;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;2;11.4;3.3;2.0
+15;ostatni;ridic;ne;rychlost;mokry;neztizene;neztizena;dvoupruh;primy usek;3.trida;2;11.4;3.3;2.0
+8;prekazka;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;krizovatka;mistni;2;11.4;3.3;2.0
+5;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;svitani/soumrak;ostatni;primy usek;2.trida;2;11.4;3.3;2.0
+7;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;2;11.4;3.3;2.0
+16;vozidlo;ridic;ne;zpusob jizdy;mokry;slaby dest;neztizena;dvoupruh;primy usek;mistni;2;11.4;3.3;2.0
+20;ostatni;ridic;ano;zpusob jizdy;mokry;neztizene;svitani/soumrak;dvoupruh;primy usek;mistni;2;11.4;3.3;2.0
+5;vozidlo;ridic;ano;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;1.trida;2;11.4;3.3;2.0
+15;chodec;chodec;neznamo;nezavineni ridicem;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;3;9.9;1.4;0.0
+16;ostatni;ridic;ano;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;3;9.9;1.4;0.0
+11;prekazka;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;3;9.9;1.4;0.0
+10;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;3;9.9;1.4;0.0
+12;prekazka;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;3;9.9;1.4;0.0
+19;vozidlo;ridic;ne;predjizdeni;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;4;13.4;0.5;0.0
+17;prekazka;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;4;13.4;0.5;0.0
+16;vozidlo;ridic;neznamo;zpusob jizdy;mokry;neztizene;neztizena;ostatni;primy usek;mistni;4;13.4;0.5;0.0
+5;vozidlo;ridic;ne;predjizdeni;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;5;14.2;2.1;1.3
+6;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;5;14.2;2.1;1.3
+9;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;ctyrpruh;krizovatka;mistni;5;14.2;2.1;1.3
+14;vozidlo;ridic;ne;nedani prednosti;mokry;slaby dest;ztizena pocasim;dvoupruh;krizovatka;mistni;5;14.2;2.1;1.3
+17;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;5;14.2;2.1;1.3
+12;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;1.trida;5;14.2;2.1;1.3
+12;vozidlo;ridic;ne;nedani prednosti;mokry;slaby dest;ztizena pocasim;dvoupruh;krizovatka;1.trida;5;14.2;2.1;1.3
+19;prekazka;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;5;14.2;2.1;1.3
+11;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;5;14.2;2.1;1.3
+14;vozidlo;ridic;ne;zpusob jizdy;mokry;slaby dest;neztizena;dvoupruh;primy usek;2.trida;5;14.2;2.1;1.3
+6;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;1.trida;5;14.2;2.1;1.3
+12;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;3.trida;6;17.5;7.5;0.6
+12;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;2.trida;6;17.5;7.5;0.6
+17;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;3.trida;6;17.5;7.5;0.6
+20;vozidlo;ridic;ano;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;6;17.5;7.5;0.6
+12;ostatni;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;krizovatka;1.trida;6;17.5;7.5;0.6
+5;prekazka;ridic;ano;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;6;17.5;7.5;0.6
+15;ostatni;ridic;ne;rychlost;suchy;neztizene;neztizena;ostatni;zatacka;3.trida;6;17.5;7.5;0.6
+17;ostatni;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;6;17.5;7.5;0.6
+14;prekazka;ridic;ano;rychlost;suchy;neztizene;neztizena;ostatni;zatacka;2.trida;6;17.5;7.5;0.6
+17;ostatni;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;zatacka;1.trida;6;17.5;7.5;0.6
+21;ostatni;ridic;ano;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;6;17.5;7.5;0.6
+14;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;6;17.5;7.5;0.6
+19;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;krizovatka;3.trida;6;17.5;7.5;0.6
+20;chodec;ridic;neznamo;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;3.trida;6;17.5;7.5;0.6
+22;ostatni;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;6;17.5;7.5;0.6
+14;vozidlo;ridic;ano;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;7;16.0;5.7;0.0
+21;ostatni;ridic;ano;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;7;16.0;5.7;0.0
+16;ostatni;ridic;ne;rychlost;suchy;neztizene;neztizena;ostatni;primy usek;2.trida;7;16.0;5.7;0.0
+15;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;krizovatka;2.trida;7;16.0;5.7;0.0
+13;chodec;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;7;16.0;5.7;0.0
+22;prekazka;ridic;ano;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;krizovatka;2.trida;7;16.0;5.7;0.0
+8;chodec;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;7;16.0;5.7;0.0
+18;chodec;ridic;ne;zpusob jizdy;ostatni;ostatni;neztizena;dvoupruh;krizovatka;mistni;1;18.7;2.7;0.0
+10;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;ucelova;1;18.7;2.7;0.0
+5;prekazka;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;1;18.7;2.7;0.0
+18;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;1;18.7;2.7;0.0
+14;prekazka;ridic;ne;rychlost;suchy;neztizene;neztizena;ostatni;zatacka;ucelova;1;18.7;2.7;0.0
+9;ostatni;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;2.trida;1;18.7;2.7;0.0
+23;zvire;zvire;neznamo;nezavineni ridicem;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;1;18.7;2.7;0.0
+13;ostatni;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;2;15.9;8.1;1.5
+13;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;2.trida;2;15.9;8.1;1.5
+14;prekazka;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;2;15.9;8.1;1.5
+16;prekazka;ridic;ne;zpusob jizdy;mokry;slaby dest;neztizena;ostatni;primy usek;mistni;2;15.9;8.1;1.5
+7;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;2;15.9;8.1;1.5
+12;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;zatacka;2.trida;2;15.9;8.1;1.5
+14;prekazka;ridic;ano;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;krizovatka;3.trida;2;15.9;8.1;1.5
+20;zvire;zvire;neznamo;nezavineni ridicem;mokry;neztizene;neztizena;dvoupruh;primy usek;1.trida;2;15.9;8.1;1.5
+6;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;2.trida;2;15.9;8.1;1.5
+10;vozidlo;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;2;15.9;8.1;1.5
+19;prekazka;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;2;15.9;8.1;1.5
+22;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;2;15.9;8.1;1.5
+7;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;3;14.5;4.4;0.3
+7;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;3;14.5;4.4;0.3
+12;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;zatacka;3.trida;3;14.5;4.4;0.3
+14;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;3;14.5;4.4;0.3
+9;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;3;14.5;4.4;0.3
+10;vozidlo;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;3;14.5;4.4;0.3
+15;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;3;14.5;4.4;0.3
+13;prekazka;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;3;14.5;4.4;0.3
+12;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;krizovatka;mistni;3;14.5;4.4;0.3
+15;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;3.trida;3;14.5;4.4;0.3
+6;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;3.trida;4;18.5;1.1;0.0
+16;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;4;18.5;1.1;0.0
+20;vozidlo;ridic;neznamo;nedani prednosti;suchy;neztizene;neztizena;ostatni;krizovatka;mistni;4;18.5;1.1;0.0
+6;prekazka;ridic;ne;rychlost;suchy;neztizene;neztizena;ostatni;zatacka;dalnice;4;18.5;1.1;0.0
+8;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;3.trida;4;18.5;1.1;0.0
+16;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;4;18.5;1.1;0.0
+7;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;2.trida;4;18.5;1.1;0.0
+6;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;zatacka;mistni;4;18.5;1.1;0.0
+11;prekazka;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;4;18.5;1.1;0.0
+16;ostatni;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;zatacka;mistni;5;22.6;3.9;0.0
+10;prekazka;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;5;22.6;3.9;0.0
+7;ostatni;ridic;ne;rychlost;suchy;neztizene;neztizena;ostatni;krizovatka;mistni;5;22.6;3.9;0.0
+14;vozidlo;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;5;22.6;3.9;0.0
+15;ostatni;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;zatacka;3.trida;5;22.6;3.9;0.0
+17;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;5;22.6;3.9;0.0
+14;zvire;zvire;neznamo;nezavineni ridicem;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;5;22.6;3.9;0.0
+14;ostatni;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;5;22.6;3.9;0.0
+16;ostatni;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;kruhovy objezd;2.trida;5;22.6;3.9;0.0
+15;prekazka;ridic;ne;rychlost;suchy;neztizene;neztizena;ostatni;krizovatka;2.trida;5;22.6;3.9;0.0
+10;vozidlo;ridic;ano;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;ucelova;5;22.6;3.9;0.0
+16;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;zatacka;2.trida;5;22.6;3.9;0.0
+9;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;5;22.6;3.9;0.0
+18;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;5;22.6;3.9;0.0
+16;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;5;22.6;3.9;0.0
+21;vozidlo;ridic;neznamo;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;6;19.0;10.7;3.9
+3;prekazka;ridic;neznamo;rychlost;suchy;neztizene;neztizena;dvoupruh;zatacka;2.trida;6;19.0;10.7;3.9
+19;ostatni;ridic;ano;rychlost;suchy;neztizene;neztizena;dvoupruh;zatacka;3.trida;6;19.0;10.7;3.9
+13;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;6;19.0;10.7;3.9
+10;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;6;19.0;10.7;3.9
+18;vozidlo;ridic;ne;nedani prednosti;mokry;slaby dest;neztizena;dvoupruh;krizovatka;3.trida;6;19.0;10.7;3.9
+9;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ctyrpruh;zatacka;1.trida;6;19.0;10.7;3.9
+14;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;6;19.0;10.7;3.9
+17;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;6;19.0;10.7;3.9
+15;ostatni;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;7;16.8;7.8;0.0
+10;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;3.trida;7;16.8;7.8;0.0
+16;prekazka;ridic;neznamo;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;7;16.8;7.8;0.0
+13;ostatni;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;7;16.8;7.8;0.0
+21;prekazka;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;7;16.8;7.8;0.0
+12;prekazka;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;7;16.8;7.8;0.0
+9;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;2.trida;7;16.8;7.8;0.0
+18;ostatni;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;7;16.8;7.8;0.0
+17;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;7;16.8;7.8;0.0
+19;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;zatacka;3.trida;7;16.8;7.8;0.0
+15;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;zatacka;ucelova;1;16.4;6.0;0.0
+17;chodec;chodec;ne;nezavineni ridicem;suchy;neztizene;neztizena;ostatni;primy usek;mistni;1;16.4;6.0;0.0
+17;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;1.trida;1;16.4;6.0;0.0
+14;ostatni;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;1;16.4;6.0;0.0
+20;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;ostatni;kruhovy objezd;1.trida;1;16.4;6.0;0.0
+14;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;2.trida;1;16.4;6.0;0.0
+7;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;vicepruh;primy usek;dalnice;2;17.4;2.4;0.0
+13;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;zatacka;3.trida;2;17.4;2.4;0.0
+7;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;3.trida;2;17.4;2.4;0.0
+10;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;zatacka;2.trida;2;17.4;2.4;0.0
+21;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;2;17.4;2.4;0.0
+9;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;1.trida;2;17.4;2.4;0.0
+17;ostatni;ucastnik;ne;nezavineni ridicem;suchy;neztizene;neztizena;dvoupruh;zatacka;2.trida;2;17.4;2.4;0.0
+7;vozidlo;ridic;ano;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;2;17.4;2.4;0.0
+9;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;2;17.4;2.4;0.0
+15;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;krizovatka;mistni;2;17.4;2.4;0.0
+17;prekazka;ridic;ano;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;zatacka;3.trida;2;17.4;2.4;0.0
+15;ostatni;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;2;17.4;2.4;0.0
+18;ostatni;ostatni;neznamo;zavada;suchy;neztizene;neztizena;ostatni;primy usek;mistni;2;17.4;2.4;0.0
+15;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;krizovatka;mistni;3;16.7;5.8;3.6
+7;prekazka;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;3;16.7;5.8;3.6
+19;vozidlo;ridic;ne;nedani prednosti;mokry;slaby dest;neztizena;vicepruh;krizovatka;2.trida;3;16.7;5.8;3.6
+14;vozidlo;ridic;neznamo;nedani prednosti;suchy;neztizene;neztizena;ctyrpruh;krizovatka;1.trida;4;16.8;9.4;0.8
+8;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ctyrpruh;primy usek;2.trida;4;16.8;9.4;0.8
+1;chodec;ridic;neznamo;zpusob jizdy;mokry;slaby dest;neztizena;dvoupruh;primy usek;3.trida;4;16.8;9.4;0.8
+18;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;4;16.8;9.4;0.8
+19;prekazka;ridic;ne;rychlost;suchy;neztizene;neztizena;ostatni;zatacka;mistni;4;16.8;9.4;0.8
+14;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;5;12.4;8.6;1.9
+10;prekazka;ridic;ne;zpusob jizdy;mokry;neztizene;neztizena;dvoupruh;primy usek;mistni;5;12.4;8.6;1.9
+15;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;tripruh;primy usek;1.trida;5;12.4;8.6;1.9
+17;ostatni;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;zatacka;2.trida;5;12.4;8.6;1.9
+9;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;kruhovy objezd;mistni;5;12.4;8.6;1.9
+16;prekazka;ridic;ne;rychlost;mokry;neztizene;neztizena;dvoupruh;primy usek;3.trida;5;12.4;8.6;1.9
+11;vozidlo;ridic;neznamo;zpusob jizdy;mokry;slaby dest;neztizena;ostatni;primy usek;mistni;5;12.4;8.6;1.9
+17;vozidlo;ridic;ne;rychlost;mokry;neztizene;neztizena;dvoupruh;primy usek;1.trida;5;12.4;8.6;1.9
+22;chodec;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;5;12.4;8.6;1.9
+13;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;tripruh;krizovatka;2.trida;5;12.4;8.6;1.9
+14;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;ucelova;5;12.4;8.6;1.9
+10;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;6;11.8;8.3;0.2
+22;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;6;11.8;8.3;0.2
+9;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;6;11.8;8.3;0.2
+10;prekazka;ridic;ano;rychlost;suchy;neztizene;neztizena;dvoupruh;zatacka;mistni;6;11.8;8.3;0.2
+15;vozidlo;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;krizovatka;mistni;6;11.8;8.3;0.2
+17;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;6;11.8;8.3;0.2
+19;vozidlo;ridic;ano;rychlost;mokry;neztizene;neztizena;tripruh;primy usek;mistni;7;13.2;8.8;5.4
+5;prekazka;ridic;ano;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;7;13.2;8.8;5.4
+19;prekazka;ridic;ne;zpusob jizdy;mokry;neztizene;svitani/soumrak;dvoupruh;primy usek;2.trida;7;13.2;8.8;5.4
+20;prekazka;ridic;neznamo;rychlost;mokry;dest;ztizena pocasim;dvoupruh;primy usek;2.trida;7;13.2;8.8;5.4
+21;prekazka;ridic;ano;zpusob jizdy;mokry;dest;neztizena;dvoupruh;krizovatka;1.trida;7;13.2;8.8;5.4
+20;ostatni;ridic;ne;zpusob jizdy;mokry;dest;neztizena;dvoupruh;primy usek;2.trida;7;13.2;8.8;5.4
+18;prekazka;ridic;neznamo;zpusob jizdy;mokry;dest;neztizena;ostatni;primy usek;mistni;7;13.2;8.8;5.4
+23;prekazka;ridic;ne;rychlost;mokry;dest;ztizena pocasim;dvoupruh;kruhovy objezd;1.trida;7;13.2;8.8;5.4
+6;vozidlo;ridic;ne;zpusob jizdy;mokry;dest;ztizena pocasim;dvoupruh;primy usek;1.trida;1;16.4;7.8;10.2
+9;prekazka;ucastnik;neznamo;nezavineni ridicem;mokry;dest;neztizena;ostatni;primy usek;mistni;1;16.4;7.8;10.2
+8;vozidlo;ridic;ne;nedani prednosti;mokry;dest;ztizena pocasim;dvoupruh;krizovatka;1.trida;1;16.4;7.8;10.2
+7;ostatni;ridic;ne;rychlost;mokry;dest;neztizena;dvoupruh;zatacka;2.trida;1;16.4;7.8;10.2
+12;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;1;16.4;7.8;10.2
+8;ostatni;ridic;ne;zpusob jizdy;mokry;neztizene;neztizena;dvoupruh;primy usek;3.trida;1;16.4;7.8;10.2
+8;vozidlo;ridic;ano;nedani prednosti;mokry;dest;ztizena pocasim;vicepruh;primy usek;1.trida;1;16.4;7.8;10.2
+9;ostatni;ridic;neznamo;predjizdeni;mokry;neztizene;neztizena;dvoupruh;primy usek;1.trida;1;16.4;7.8;10.2
+9;vozidlo;ridic;neznamo;zpusob jizdy;mokry;slaby dest;neztizena;ostatni;primy usek;mistni;1;16.4;7.8;10.2
+14;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;1;16.4;7.8;10.2
+16;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;3.trida;1;16.4;7.8;10.2
+16;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;3.trida;1;16.4;7.8;10.2
+21;ostatni;ridic;ano;zpusob jizdy;mokry;neztizene;neztizena;dvoupruh;primy usek;mistni;1;16.4;7.8;10.2
+12;prekazka;ridic;ne;zpusob jizdy;mokry;dest;neztizena;dvoupruh;krizovatka;3.trida;1;16.4;7.8;10.2
+12;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;tripruh;primy usek;1.trida;2;15.6;5.9;5.6
+23;zvire;zvire;neznamo;nezavineni ridicem;mokry;dest;ztizena pocasim;dvoupruh;primy usek;1.trida;2;15.6;5.9;5.6
+11;ostatni;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;2;15.6;5.9;5.6
+8;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;mistni;2;15.6;5.9;5.6
+8;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;1.trida;2;15.6;5.9;5.6
+6;zvire;zvire;neznamo;nezavineni ridicem;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;2;15.6;5.9;5.6
+17;prekazka;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;2;15.6;5.9;5.6
+16;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;2;15.6;5.9;5.6
+23;prekazka;ridic;ne;rychlost;mokry;slaby dest;neztizena;dvoupruh;primy usek;2.trida;3;11.8;6.1;2.1
+6;prekazka;ostatni;ne;nezavineni ridicem;mokry;neztizene;neztizena;ostatni;primy usek;mistni;3;11.8;6.1;2.1
+11;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ctyrpruh;primy usek;1.trida;3;11.8;6.1;2.1
+12;vozidlo;ridic;neznamo;predjizdeni;suchy;neztizene;neztizena;ostatni;primy usek;2.trida;3;11.8;6.1;2.1
+13;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;3;11.8;6.1;2.1
+12;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;3;11.8;6.1;2.1
+10;prekazka;ostatni;neznamo;nezavineni ridicem;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;3;11.8;6.1;2.1
+6;zvire;zvire;neznamo;nezavineni ridicem;mokry;neztizene;neztizena;dvoupruh;primy usek;3.trida;3;11.8;6.1;2.1
+2;ostatni;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;4;12.5;5.5;0.0
+9;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;2.trida;4;12.5;5.5;0.0
+17;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;4;12.5;5.5;0.0
+13;vozidlo;ridic;neznamo;zpusob jizdy;suchy;ostatni;neztizena;ostatni;primy usek;ucelova;4;12.5;5.5;0.0
+16;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;4;12.5;5.5;0.0
+8;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;4;12.5;5.5;0.0
+13;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;2.trida;4;12.5;5.5;0.0
+11;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;4;12.5;5.5;0.0
+9;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;4;12.5;5.5;0.0
+9;prekazka;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;5;15.1;7.6;0.0
+14;chodec;chodec;ne;nezavineni ridicem;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;5;15.1;7.6;0.0
+11;prekazka;ridic;ne;rychlost;suchy;ostatni;neztizena;ostatni;primy usek;dalnice;5;15.1;7.6;0.0
+8;prekazka;ridic;ne;rychlost;suchy;neztizene;neztizena;ctyrpruh;primy usek;dalnice;5;15.1;7.6;0.0
+20;vozidlo;ridic;ne;predjizdeni;suchy;neztizene;svitani/soumrak;dvoupruh;primy usek;2.trida;5;15.1;7.6;0.0
+19;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;5;15.1;7.6;0.0
+15;vozidlo;ridic;ne;predjizdeni;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;5;15.1;7.6;0.0
+10;ostatni;komunikace;neznamo;nezavineni ridicem;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;5;15.1;7.6;0.0
+13;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;krizovatka;mistni;5;15.1;7.6;0.0
+12;vozidlo;ridic;neznamo;predjizdeni;suchy;neztizene;neztizena;dvoupruh;zatacka;3.trida;5;15.1;7.6;0.0
+23;ostatni;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;5;15.1;7.6;0.0
+8;ostatni;ridic;neznamo;nedani prednosti;suchy;neztizene;neztizena;tripruh;krizovatka;mistni;5;15.1;7.6;0.0
+10;prekazka;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;5;15.1;7.6;0.0
+21;prekazka;ridic;ano;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;5;15.1;7.6;0.0
+19;prekazka;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;zatacka;3.trida;5;15.1;7.6;0.0
+16;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;6;21.5;10.0;2.3
+16;vozidlo;ridic;neznamo;rychlost;suchy;neztizene;neztizena;dvoupruh;zatacka;2.trida;6;21.5;10.0;2.3
+14;ostatni;ridic;ano;rychlost;suchy;neztizene;neztizena;dvoupruh;zatacka;mistni;6;21.5;10.0;2.3
+10;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;3.trida;6;21.5;10.0;2.3
+13;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;2.trida;6;21.5;10.0;2.3
+14;ostatni;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;6;21.5;10.0;2.3
+8;prekazka;ridic;ne;rychlost;suchy;neztizene;neztizena;ostatni;zatacka;mistni;6;21.5;10.0;2.3
+5;ostatni;ridic;ano;rychlost;suchy;neztizene;svitani/soumrak;tripruh;primy usek;mistni;6;21.5;10.0;2.3
+10;vozidlo;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;6;21.5;10.0;2.3
+15;ostatni;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;6;21.5;10.0;2.3
+10;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;krizovatka;mistni;6;21.5;10.0;2.3
+16;ostatni;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;6;21.5;10.0;2.3
+5;prekazka;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;6;21.5;10.0;2.3
+12;vozidlo;ridic;ne;nedani prednosti;suchy;ostatni;ztizena pocasim;dvoupruh;primy usek;3.trida;6;21.5;10.0;2.3
+13;ostatni;ridic;ano;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;6;21.5;10.0;2.3
+21;zvire;zvire;neznamo;nezavineni ridicem;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;6;21.5;10.0;2.3
+14;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;ucelova;6;21.5;10.0;2.3
+6;prekazka;ridic;ano;rychlost;suchy;neztizene;neztizena;ostatni;zatacka;3.trida;7;24.4;10.9;0.0
+5;ostatni;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;7;24.4;10.9;0.0
+9;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;tripruh;krizovatka;2.trida;7;24.4;10.9;0.0
+15;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;2.trida;7;24.4;10.9;0.0
+14;ostatni;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;7;24.4;10.9;0.0
+12;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;7;24.4;10.9;0.0
+14;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;ctyrpruh;krizovatka;mistni;7;24.4;10.9;0.0
+14;ostatni;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;vicepruh;primy usek;1.trida;7;24.4;10.9;0.0
+15;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;7;24.4;10.9;0.0
+18;vozidlo;ridic;ano;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;krizovatka;2.trida;7;24.4;10.9;0.0
+13;vozidlo;ridic;ne;predjizdeni;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;7;24.4;10.9;0.0
+14;zvire;zvire;neznamo;nezavineni ridicem;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;7;24.4;10.9;0.0
+14;ostatni;ridic;ne;zpusob jizdy;ostatni;neztizene;neztizena;ostatni;zatacka;2.trida;7;24.4;10.9;0.0
+1;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;krizovatka;mistni;1;26.3;10.4;0.7
+7;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;krizovatka;mistni;1;26.3;10.4;0.7
+8;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;mistni;1;26.3;10.4;0.7
+10;ostatni;ostatni;ne;nezavineni ridicem;suchy;neztizene;neztizena;dvoupruh;krizovatka;mistni;1;26.3;10.4;0.7
+12;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;tripruh;krizovatka;3.trida;1;26.3;10.4;0.7
+16;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;mistni;1;26.3;10.4;0.7
+17;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;1;26.3;10.4;0.7
+15;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;1;26.3;10.4;0.7
+21;prekazka;ridic;ano;zpusob jizdy;mokry;dest;neztizena;dvoupruh;zatacka;3.trida;1;26.3;10.4;0.7
+23;zvire;zvire;neznamo;nezavineni ridicem;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;1;26.3;10.4;0.7
+13;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;2.trida;1;26.3;10.4;0.7
+11;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;1;26.3;10.4;0.7
+10;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;1;26.3;10.4;0.7
+17;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;2;23.0;11.3;9.0
+14;prekazka;ridic;ne;rychlost;mokry;dest;ztizena pocasim;ctyrpruh;primy usek;dalnice;2;23.0;11.3;9.0
+14;prekazka;ridic;ne;rychlost;mokry;dest;ztizena pocasim;rychlostni;primy usek;dalnice;2;23.0;11.3;9.0
+6;vozidlo;ridic;ne;predjizdeni;suchy;neztizene;neztizena;dvoupruh;krizovatka;2.trida;2;23.0;11.3;9.0
+9;ostatni;ridic;ne;zpusob jizdy;suchy;ostatni;neztizena;dvoupruh;krizovatka;2.trida;2;23.0;11.3;9.0
+14;vozidlo;ridic;neznamo;zpusob jizdy;mokry;slaby dest;ztizena pocasim;dvoupruh;primy usek;1.trida;2;23.0;11.3;9.0
+10;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;2;23.0;11.3;9.0
+14;ostatni;ridic;ne;zpusob jizdy;mokry;dest;svitani/soumrak;ostatni;primy usek;mistni;2;23.0;11.3;9.0
+12;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;ucelova;2;23.0;11.3;9.0
+11;vozidlo;ridic;neznamo;zpusob jizdy;mokry;slaby dest;neztizena;dvoupruh;primy usek;1.trida;2;23.0;11.3;9.0
+15;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;ucelova;2;23.0;11.3;9.0
+21;chodec;chodec;neznamo;nezavineni ridicem;suchy;neztizene;neztizena;tripruh;primy usek;mistni;3;15.4;9.5;0.1
+14;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;mistni;3;15.4;9.5;0.1
+9;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;3;15.4;9.5;0.1
+17;prekazka;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;3;15.4;9.5;0.1
+10;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;3;15.4;9.5;0.1
+16;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;3;15.4;9.5;0.1
+10;vozidlo;ridic;ano;zpusob jizdy;suchy;neztizene;neztizena;tripruh;primy usek;2.trida;3;15.4;9.5;0.1
+14;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;3;15.4;9.5;0.1
+14;prekazka;ridic;ano;zpusob jizdy;suchy;neztizene;neztizena;rychlostni;primy usek;dalnice;3;15.4;9.5;0.1
+10;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;3;15.4;9.5;0.1
+5;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;krizovatka;3.trida;3;15.4;9.5;0.1
+16;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;4;20.7;6.2;0.0
+21;prekazka;ridic;ne;zpusob jizdy;ostatni;neztizene;neztizena;ostatni;zatacka;ucelova;4;20.7;6.2;0.0
+12;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;krizovatka;mistni;4;20.7;6.2;0.0
+15;chodec;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;ctyrpruh;primy usek;mistni;4;20.7;6.2;0.0
+16;prekazka;ridic;ne;rychlost;suchy;ostatni;neztizena;dvoupruh;zatacka;3.trida;4;20.7;6.2;0.0
+16;chodec;chodec;ne;nezavineni ridicem;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;4;20.7;6.2;0.0
+13;chodec;ridic;ano;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;4;20.7;6.2;0.0
+14;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ctyrpruh;primy usek;dalnice;4;20.7;6.2;0.0
+7;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;zatacka;3.trida;4;20.7;6.2;0.0
+7;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;ucelova;4;20.7;6.2;0.0
+9;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;ucelova;5;20.8;7.5;0.0
+13;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;5;20.8;7.5;0.0
+12;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;5;20.8;7.5;0.0
+13;chodec;chodec;ne;nezavineni ridicem;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;5;20.8;7.5;0.0
+15;ostatni;ridic;ne;rychlost;suchy;neztizene;neztizena;ostatni;zatacka;mistni;5;20.8;7.5;0.0
+18;chodec;ridic;neznamo;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;5;20.8;7.5;0.0
+11;ostatni;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;zatacka;2.trida;5;20.8;7.5;0.0
+8;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;5;20.8;7.5;0.0
+11;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;5;20.8;7.5;0.0
+14;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;krizovatka;3.trida;5;20.8;7.5;0.0
+11;vozidlo;ridic;ne;predjizdeni;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;5;20.8;7.5;0.0
+13;vozidlo;ridic;neznamo;rychlost;suchy;neztizene;neztizena;dvoupruh;krizovatka;1.trida;5;20.8;7.5;0.0
+22;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;ucelova;6;20.4;7.4;0.2
+5;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;6;20.4;7.4;0.2
+18;prekazka;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;zatacka;mistni;6;20.4;7.4;0.2
+13;prekazka;ridic;ano;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;6;20.4;7.4;0.2
+12;ostatni;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;6;20.4;7.4;0.2
+12;ostatni;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;zatacka;3.trida;6;20.4;7.4;0.2
+17;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;2.trida;6;20.4;7.4;0.2
+18;prekazka;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;zatacka;2.trida;7;22.0;5.3;0.0
+10;vozidlo;ridic;ano;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;7;22.0;5.3;0.0
+12;ostatni;ridic;ne;rychlost;ostatni;neztizene;neztizena;dvoupruh;zatacka;mistni;7;22.0;5.3;0.0
+20;prekazka;ridic;ano;rychlost;suchy;neztizene;neztizena;tripruh;krizovatka;mistni;7;22.0;5.3;0.0
+18;ostatni;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;ucelova;7;22.0;5.3;0.0
+18;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;7;22.0;5.3;0.0
+18;ostatni;ridic;ano;rychlost;suchy;neztizene;neztizena;ctyrpruh;krizovatka;mistni;7;22.0;5.3;0.0
+22;ostatni;ridic;neznamo;rychlost;suchy;neztizene;neztizena;dvoupruh;zatacka;mistni;7;22.0;5.3;0.0
+18;vozidlo;ridic;ne;nedani prednosti;suchy;ostatni;neztizena;dvoupruh;krizovatka;1.trida;7;22.0;5.3;0.0
+17;vozidlo;ridic;ano;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;1;22.7;6.3;0.0
+8;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;1;22.7;6.3;0.0
+9;chodec;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;ucelova;1;22.7;6.3;0.0
+9;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;2.trida;1;22.7;6.3;0.0
+8;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;1;22.7;6.3;0.0
+15;ostatni;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;1;22.7;6.3;0.0
+17;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;1;22.7;6.3;0.0
+8;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;1;22.7;6.3;0.0
+13;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;1;22.7;6.3;0.0
+14;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ctyrpruh;primy usek;dalnice;2;21.3;8.9;0.0
+4;ostatni;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;2;21.3;8.9;0.0
+9;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;primy usek;ucelova;2;21.3;8.9;0.0
+13;zvire;zvire;neznamo;nezavineni ridicem;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;2;21.3;8.9;0.0
+17;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;2;21.3;8.9;0.0
+20;vozidlo;ridic;ne;predjizdeni;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;2;21.3;8.9;0.0
+19;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;2;21.3;8.9;0.0
+8;zvire;zvire;neznamo;nezavineni ridicem;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;2;21.3;8.9;0.0
+10;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;2;21.3;8.9;0.0
+17;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;2;21.3;8.9;0.0
+18;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;ucelova;2;21.3;8.9;0.0
+14;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;2.trida;2;21.3;8.9;0.0
+11;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;3;23.1;5.9;0.0
+7;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;krizovatka;2.trida;3;23.1;5.9;0.0
+17;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;ucelova;3;23.1;5.9;0.0
+7;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;zatacka;3.trida;3;23.1;5.9;0.0
+2;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;3;23.1;5.9;0.0
+15;ostatni;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;3;23.1;5.9;0.0
+18;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;tripruh;krizovatka;mistni;3;23.1;5.9;0.0
+18;ostatni;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;primy usek;3.trida;3;23.1;5.9;0.0
+18;zvire;zvire;neznamo;nezavineni ridicem;suchy;neztizene;neztizena;dvoupruh;zatacka;mistni;3;23.1;5.9;0.0
+15;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;kruhovy objezd;3.trida;3;23.1;5.9;0.0
+10;ostatni;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;tripruh;krizovatka;1.trida;3;23.1;5.9;0.0
+14;vozidlo;ridic;ano;predjizdeni;suchy;neztizene;neztizena;dvoupruh;krizovatka;mistni;3;23.1;5.9;0.0
+13;vozidlo;ridic;ne;rychlost;suchy;neztizene;neztizena;dvoupruh;zatacka;2.trida;3;23.1;5.9;0.0
+16;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;mistni;3;23.1;5.9;0.0
+7;vozidlo;ridic;ne;nedani prednosti;suchy;neztizene;neztizena;dvoupruh;primy usek;mistni;3;23.1;5.9;0.0
+9;prekazka;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;3;23.1;5.9;0.0
+6;vozidlo;ridic;ne;zpusob jizdy;suchy;neztizene;neztizena;dvoupruh;primy usek;1.trida;3;23.1;5.9;0.0
+14;vozidlo;ridic;neznamo;zpusob jizdy;suchy;neztizene;neztizena;ostatni;primy usek;ucelova;3;23.1;5.9;0.0
