@@ -34,6 +34,7 @@ public class CsvManager {
     private final ParameterManager pm = new ParameterManager();
     private LocalDate lastDate;
     private boolean updated = false;
+    private List<Integer> columnsToRemove;
 
     private String[] lastWeatherRow;
 
@@ -42,12 +43,14 @@ public class CsvManager {
         this.separator = separator;
         lastDate = LocalDate.MIN;
         sprava = new Sprava();
+        columnsToRemove = new LinkedList<>();
 
     }
 
     public void updateCsvFile() throws IOException, CsvException {
         loadCsvData();
         List<Integer> rowsToRemove = new LinkedList<>();
+
         updateHeader();
         for (int row = 1; row < csvData.size(); row++) {
 
@@ -56,34 +59,45 @@ public class CsvManager {
                 rowsToRemove.add(row);
                 continue;
             }
+            //System.out.println(pm.getIndexes().getAccidentType());
+            updateColumn(row, pm.getIndexes().getTown(), pm.getTownValue(getData(row, pm.getIndexes().getTown())));
+            updateColumn(row, pm.getIndexes().getAccidentType(), pm.getAccidentTypeValue(getData(row, pm.getIndexes().getAccidentType())));
+            updateColumn(row, pm.getIndexes().getGuilty(), pm.getGuiltyValue(getData(row, pm.getIndexes().getGuilty())));
+            updateColumn(row, pm.getIndexes().getAlcohol(), pm.getAlcoholValue(getData(row, pm.getIndexes().getAlcohol())));
+            updateColumn(row, pm.getIndexes().getCause(), pm.getCauseValue(getData(row, pm.getIndexes().getCause())));
+            updateColumn(row, pm.getIndexes().getSurface(), pm.getSurfaceValue(getData(row, pm.getIndexes().getSurface())));
+            updateColumn(row, pm.getIndexes().getWeatherConditions(), pm.getWeatherValue(getData(row, pm.getIndexes().getWeatherConditions())));
+            updateColumn(row, pm.getIndexes().getVisibility(), pm.getVisibilityValue(getData(row, pm.getIndexes().getVisibility())));
+            updateColumn(row, pm.getIndexes().getRoadLine(), pm.getRoadLineValue(getData(row, pm.getIndexes().getRoadLine())));
+            updateColumn(row, pm.getIndexes().getRoadType(), pm.getRoadTypeValue(getData(row, pm.getIndexes().getRoadType())));
+            updateColumn(row, pm.getIndexes().getDirection(), pm.getDirectionValue(getData(row, pm.getIndexes().getDirection())));
+            updateColumn(row, pm.getIndexes().getRoadState(), pm.getRoadState(getData(row, pm.getIndexes().getRoadState())));
+            updateColumn(row, pm.getIndexes().getVision(), pm.getVision(getData(row, pm.getIndexes().getVision())));
+            updateColumn(row, pm.getIndexes().getRoadArea(), pm.getRoadArea(getData(row, pm.getIndexes().getRoadArea())));
+            updateColumn(row, pm.getIndexes().getSpecificPlace(), pm.getSpecificPlace(getData(row, pm.getIndexes().getSpecificPlace())));
 
-            updateColumn(row, ColumnIndex.TOWN.getColumnIndex(), pm.getTownValue(getData(row, ColumnIndex.TOWN.getColumnIndex())));
-            updateColumn(row, ColumnIndex.ACCIDENT_TYPE.getColumnIndex(), pm.getAccidentTypeValue(getData(row, ColumnIndex.ACCIDENT_TYPE.getColumnIndex())));
-            updateColumn(row, ColumnIndex.GUILTY.getColumnIndex(), pm.getGuiltyValue(getData(row, ColumnIndex.GUILTY.getColumnIndex())));
-            updateColumn(row, ColumnIndex.ALCOHOL.getColumnIndex(), pm.getAlcoholValue(getData(row, ColumnIndex.ALCOHOL.getColumnIndex())));
-            updateColumn(row, ColumnIndex.CAUSE.getColumnIndex(), pm.getCauseValue(getData(row, ColumnIndex.CAUSE.getColumnIndex())));
-            updateColumn(row, ColumnIndex.SURFACE.getColumnIndex(), pm.getSurfaceValue(getData(row, ColumnIndex.SURFACE.getColumnIndex())));
-            updateColumn(row, ColumnIndex.WEATHER_CONDITIONS.getColumnIndex(), pm.getWeatherValue(getData(row, ColumnIndex.WEATHER_CONDITIONS.getColumnIndex())));
-            updateColumn(row, ColumnIndex.VISIBILITY.getColumnIndex(), pm.getVisibilityValue(getData(row, ColumnIndex.VISIBILITY.getColumnIndex())));
-            updateColumn(row, ColumnIndex.ROAD_LINE.getColumnIndex(), pm.getRoadLineValue(getData(row, ColumnIndex.ROAD_LINE.getColumnIndex())));
-            updateColumn(row, ColumnIndex.ROAD_TYPE.getColumnIndex(), pm.getRoadTypeValue(getData(row, ColumnIndex.ROAD_TYPE.getColumnIndex())));
-            updateColumn(row, ColumnIndex.DIRECTION.getColumnIndex(), pm.getDirectionValue(getData(row, ColumnIndex.DIRECTION.getColumnIndex())));
-            updateColumn(row, ColumnIndex.ROAD_STATE.getColumnIndex(), pm.getRoadState(getData(row, ColumnIndex.ROAD_STATE.getColumnIndex())));
-            updateColumn(row, ColumnIndex.VISION.getColumnIndex(), pm.getVision(getData(row, ColumnIndex.VISION.getColumnIndex())));
-            updateColumn(row, ColumnIndex.ROAD_AREA.getColumnIndex(), pm.getRoadArea(getData(row, ColumnIndex.ROAD_AREA.getColumnIndex())));
-            updateColumn(row, ColumnIndex.SPECIFIC_PLACE.getColumnIndex(), pm.getSpecificPlace(getData(row, ColumnIndex.SPECIFIC_PLACE.getColumnIndex())));
-
-            LocalDate date = parseDate(getData(row, ColumnIndex.DATE.getColumnIndex()));
+            LocalDate date = parseDate(getData(row, pm.getIndexes().getDate()));
             addValue(row, pm.getDayOfWeekValue(date.getDayOfWeek().getValue()));
             addWeatherData(row, date, WeatherInfo.JIHOCESKY, 2);
-            addValue(row, getTrafficDensity(getData(row, ColumnIndex.ROAD_NAME.getColumnIndex()), 1, 5));
+            addValue(row, getTrafficDensity(getData(row, pm.getIndexes().getRoadName()), 1, 5));
         }
 
         for (int i = rowsToRemove.size() - 1; i > -1; i--) {
-
             csvData.remove((int) rowsToRemove.get(i));
-
         }
+
+        for (int i = 0; i < csvData.size(); i++) {
+
+            String[] arrayRow = csvData.get(i);
+            List<String> listRow = new LinkedList<>(Arrays.asList(arrayRow));
+
+            for (int columnIndex : columnsToRemove) {
+                listRow.remove(columnIndex);
+            }
+
+            csvData.set(i, listRow.stream().toArray(String[]::new));
+        }
+
         writeData();
     }
 
@@ -241,10 +255,13 @@ public class CsvManager {
         String[] header = csvData.get(0);
 
         for (int i = 0; i < header.length; i++) {
+            if (!pm.setHeaderIndex(i, header[i])) {
+                columnsToRemove.add(i);
+            }
             updateColumn(0, i, pm.getHeaderValue(header[i]));
-            pm.setHeaderIndex(i, header[i]);
-        }
 
+        }
+        columnsToRemove = columnsToRemove.reversed();
     }
 
     private void removeRows(List<Integer> rowsToRemove) {

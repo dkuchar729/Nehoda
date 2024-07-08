@@ -18,7 +18,7 @@ public class Nehoda {
     public static void main(String[] args) {
         try {
 
-            CsvManager cm = new CsvManager(new File("iNehody.csv"), ';');
+            CsvManager cm = new CsvManager(new File("www.csv"), ';');
             //cm.loadCsvData();
             //cm.nastavCas(0);
             //cm.writeData();
