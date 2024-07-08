@@ -16,7 +16,7 @@ public class Nastaveni {
 
     String[] row;
     List<Map<String, Map<String, Boolean>>> seznam;
-    private   List<Map<String, Map<String, Boolean>>> seznamDen;
+    private List<Map<String, Map<String, Boolean>>> seznamDen;
     Map<String, Map<String, Boolean>> primyUsek;
     Map<String, Map<String, Boolean>> zatacka;
     Map<String, Map<String, Boolean>> krizovatka;
@@ -34,22 +34,21 @@ public class Nastaveni {
     Map<String, Map<String, Boolean>> ostatni;
 
     int cas = 0;
-    int umisteni=1;
+    int umisteni = 1;
     int druhNehody = 2;
     int zavineniNehody = 3;
     int pricinaNehody = 4;
     int povrchVozovky = 5;
-    int stavKomunikacde= 6;
+    int stavKomunikacde = 6;
     int povetrnostniPodminky = 7;
-    int viditelnost= 8;
-    int rozhledovePomery= 9;
-    int deleniKomunikace= 10;
-    int situovaniNehody= 11;
-    int speficikeMisto= 12;
+    int viditelnost = 8;
+    int rozhledovePomery = 9;
+    int deleniKomunikace = 10;
+    int situovaniNehody = 11;
+    int speficikeMisto = 12;
     int smerovyPomer = 13;
     int druhKomunikace = 14;
     int vysledek = 19;
-
 
     public Nastaveni(String[] row) {
 
@@ -58,9 +57,9 @@ public class Nastaveni {
         primyUsek = vytvorMapuSmerovehoPomeru("primyUsek");
         zatacka = vytvorMapuSmerovehoPomeru("zatacka");
         krizovatka = vytvorMapuSmerovehoPomeru("krizovatka");
-        kruhovyObjezd=vytvorMapuSmerovehoPomeru("kruhovyObjezd");
+        kruhovyObjezd = vytvorMapuSmerovehoPomeru("kruhovyObjezd");
 
-seznamDen=vytvorSeznam(new String[]{"srazkaVozidlo","srazkaOdstaveneVOzidlo","prekazka","chodec","zvire","srazkaVlak","srazkaTramvaj","havarie","ostatni"});
+        seznamDen = vytvorSeznam(new String[]{"srazkaVozidlo", "srazkaOdstaveneVOzidlo", "prekazka", "chodec", "zvire", "srazkaVlak", "srazkaTramvaj", "havarie", "ostatni"});
 
         seznam.add(primyUsek);
         seznam.add(zatacka);
@@ -81,10 +80,9 @@ seznamDen=vytvorSeznam(new String[]{"srazkaVozidlo","srazkaOdstaveneVOzidlo","pr
                         String[] newRow = row.clone();
                         newRow[smerovyPomer] = entry.getKey();
                         newRow[druhKomunikace] = komunikace.getKey();
-                        newRow[vysledek]="0";
+                        newRow[vysledek] = "0";
 
                         seznamRadek.add(newRow);
-
 
                     }
                 }
@@ -94,7 +92,7 @@ seznamDen=vytvorSeznam(new String[]{"srazkaVozidlo","srazkaOdstaveneVOzidlo","pr
         return seznamRadek;
     }
 
-    public List<String[]> vratDnyRadky(int druhNehody,int druhKomunikace,int pocet) {
+    public List<String[]> vratDnyRadky(int druhNehody, int druhKomunikace, int pocet) {
 
         List<String[]> seznamRadek = new LinkedList<>();
         for (Map<String, Map<String, Boolean>> mapa : seznamDen) {
@@ -107,10 +105,9 @@ seznamDen=vytvorSeznam(new String[]{"srazkaVozidlo","srazkaOdstaveneVOzidlo","pr
                         String[] newRow = row.clone();
                         newRow[druhNehody] = entry.getKey();
                         newRow[druhKomunikace] = komunikace.getKey();
-                        newRow[pocet]="0";
+                        newRow[pocet] = "0";
 
                         seznamRadek.add(newRow);
-
 
                     }
                 }
@@ -124,7 +121,6 @@ seznamDen=vytvorSeznam(new String[]{"srazkaVozidlo","srazkaOdstaveneVOzidlo","pr
 
         if (porovnejZaznam(row, radka)) {
 
-
             if (radka[smerovyPomer].equals("primyUsek")) {
                 primyUsek.get(radka[smerovyPomer]).put(radka[druhKomunikace], true);
                 return true;
@@ -135,28 +131,24 @@ seznamDen=vytvorSeznam(new String[]{"srazkaVozidlo","srazkaOdstaveneVOzidlo","pr
 
                 zatacka.get(radka[smerovyPomer]).put(radka[druhKomunikace], true);
                 return true;
-            }
-            else if(radka[smerovyPomer].equals("kruhovyObjezd"))
-            {
+            } else if (radka[smerovyPomer].equals("kruhovyObjezd")) {
                 kruhovyObjezd.get(radka[smerovyPomer]).put(radka[druhKomunikace], true);
                 return true;
             }
         }
         return false;
     }
+
     public boolean porovnejDen(String[] radka) {
 
-        if (porovnejDenDvaZaznam(row, radka,2,3,4)) {
+        if (porovnejDenDvaZaznam(row, radka, 2, 3, 4)) {
 
-            for(int i=0;i<seznamDen.size();i++)
-            {
-                if(seznamDen.get(i).containsKey(radka[1]))
-                {
-                    seznamDen.get(i).get(radka[1]).put(radka[5],true);
-                    return porovnejDenJednaZaznam(row,radka,1,5);
+            for (int i = 0; i < seznamDen.size(); i++) {
+                if (seznamDen.get(i).containsKey(radka[1])) {
+                    seznamDen.get(i).get(radka[1]).put(radka[5], true);
+                    return porovnejDenJednaZaznam(row, radka, 1, 5);
                 }
             }
-
 
         }
         return false;
@@ -164,32 +156,29 @@ seznamDen=vytvorSeznam(new String[]{"srazkaVozidlo","srazkaOdstaveneVOzidlo","pr
 
     public boolean porovnejZaznam(String[] radka, String[] novaRadka) {
 
+        return porovnejRadku(radka, novaRadka, cas) && porovnejRadku(radka, novaRadka, druhNehody) && porovnejRadku(radka, novaRadka, zavineniNehody)
+                && porovnejRadku(radka, novaRadka, pricinaNehody) && porovnejRadku(radka, novaRadka, viditelnost)
+                && porovnejRadku(radka, novaRadka, deleniKomunikace) && porovnejRadku(radka, novaRadka, povrchVozovky)
+                && porovnejRadku(radka, novaRadka, povetrnostniPodminky) && porovnejRadku(radka, novaRadka, umisteni)
+                && porovnejRadku(radka, novaRadka, stavKomunikacde) && porovnejRadku(radka, novaRadka, rozhledovePomery)
+                && porovnejRadku(radka, novaRadka, situovaniNehody) && porovnejRadku(radka, novaRadka, speficikeMisto);
+    }
 
-        return porovnejRadku(radka,novaRadka,cas)  && porovnejRadku(radka,novaRadka,druhNehody) && porovnejRadku(radka,novaRadka,zavineniNehody)
-               && porovnejRadku(radka,novaRadka,pricinaNehody) && porovnejRadku(radka,novaRadka,viditelnost)
-                && porovnejRadku(radka,novaRadka,deleniKomunikace) && porovnejRadku(radka,novaRadka,povrchVozovky)
-                && porovnejRadku(radka,novaRadka,povetrnostniPodminky) && porovnejRadku(radka,novaRadka,umisteni)
-                && porovnejRadku(radka,novaRadka,stavKomunikacde) &&porovnejRadku(radka,novaRadka,rozhledovePomery)
-                && porovnejRadku(radka,novaRadka,situovaniNehody) && porovnejRadku(radka,novaRadka,speficikeMisto);
-    }
     public static boolean porovnejDenDvaZaznam(String[] row1, String[] row2, int povrchKomunikace, int stavKomunikace, int viditelnost) {
-      return Nastaveni.porovnejRadku(row1, row2, povrchKomunikace)  && Nastaveni.porovnejRadku(row1, row2, stavKomunikace)&&
-                            Nastaveni.porovnejRadku(row1, row2, viditelnost);
+        return Nastaveni.porovnejRadku(row1, row2, povrchKomunikace) && Nastaveni.porovnejRadku(row1, row2, stavKomunikace)
+                && Nastaveni.porovnejRadku(row1, row2, viditelnost);
     }
-    public static boolean porovnejDenJednaZaznam(String[] row1, String[] row2, int druhNehody,int druhKomunikace) {
+
+    public static boolean porovnejDenJednaZaznam(String[] row1, String[] row2, int druhNehody, int druhKomunikace) {
         return Nastaveni.porovnejRadku(row1, row2, druhNehody) && Nastaveni.porovnejRadku(row1, row2, druhKomunikace);
     }
 
-
-
-    public static boolean porovnejRadku(String[]radka1,String[]radka2,int index)
-    {
+    public static boolean porovnejRadku(String[] radka1, String[] radka2, int index) {
         return radka1[index].equals(radka2[index]);
     }
 
     public Map<String, Boolean> vytvorMapuDruhuSilnice() {
         Map<String, Boolean> mapa = new HashMap<>();
-
 
         mapa.put("1.trida", Boolean.FALSE);
         mapa.put("2.trida", Boolean.FALSE);
@@ -201,16 +190,15 @@ seznamDen=vytvorSeznam(new String[]{"srazkaVozidlo","srazkaOdstaveneVOzidlo","pr
         return mapa;
     }
 
-public List<Map<String, Map<String, Boolean>>> vytvorSeznam(String[]nazvy)
-{
-    List<Map<String, Map<String, Boolean>>> list=new LinkedList<>();
-    for(int i=0;i<nazvy.length;i++)
-    {
-list.add(vytvorMapuSmerovehoPomeru(nazvy[i]));
+    public List<Map<String, Map<String, Boolean>>> vytvorSeznam(String[] nazvy) {
+        List<Map<String, Map<String, Boolean>>> list = new LinkedList<>();
+        for (int i = 0; i < nazvy.length; i++) {
+            list.add(vytvorMapuSmerovehoPomeru(nazvy[i]));
+        }
+
+        return list;
     }
 
-    return list;
-}
     public Map<String, Map<String, Boolean>> vytvorMapuSmerovehoPomeru(String nazev) {
         Map<String, Map<String, Boolean>> mapa = new HashMap<>();
 

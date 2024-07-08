@@ -13,6 +13,7 @@ import java.util.Map;
  */
 public final class ParameterManager {
 
+    private Indexes headerIndexes;
     private Map<Integer, String> accidentType;
     private Map<Integer, String> town;
     private Map<Integer, String> daysOfWeek;
@@ -34,6 +35,7 @@ public final class ParameterManager {
     private Map<String, String> headerValues;
 
     public ParameterManager() {
+        headerIndexes = new Indexes();
         accidentType = new HashMap<>();
         daysOfWeek = new HashMap<>();
         guilty = new HashMap<>();
@@ -191,6 +193,95 @@ public final class ParameterManager {
 
     public <A, B> void setMapValue(Map<A, B> map, A key, B value) {
         map.put(key, value);
+    }
+
+    public void setHeaderIndex(int index, String key) {
+
+        String headerValue = headerValues.get(key);
+
+        switch (key) {
+            case "p1":
+                headerIndexes.setId(index);
+                break;
+
+            case "p2a":
+                headerIndexes.setDate(index);
+                break;
+
+            case "p2b":
+                headerIndexes.setHour(index);
+                break;
+
+            case "p4b":
+                headerIndexes.setRegion(index);
+                break;
+
+            case "p5a":
+                headerIndexes.setTown(index);
+                break;
+
+            case "p6":
+                headerIndexes.setAccidentType(index);
+                break;
+
+            case "p10":
+                headerIndexes.setGuilty(index);
+                break;
+
+            case "p11":
+                headerIndexes.setAlcohol(index);
+                break;
+
+            case "p12":
+                headerIndexes.setCause(index);
+                break;
+
+            case "p16":
+                headerIndexes.setSurface(index);
+                break;
+
+            case "p17":
+                headerIndexes.setRoadState(index);
+                break;
+
+            case "p18":
+                headerIndexes.setWeatherConditions(index);
+                break;
+
+            case "p19":
+                headerIndexes.setVisibility(index);
+                break;
+
+            case "p20":
+                headerIndexes.setVision(index);
+                break;
+
+            case "p21":
+                headerIndexes.setRoadLine(index);
+                break;
+
+            case "p22":
+                headerIndexes.setRoadArea(index);
+                break;
+
+            case "p27":
+                headerIndexes.setSpecificPlace(index);
+                break;
+
+            case "p28":
+                headerIndexes.setDirection(index);
+                break;
+
+            case "p36":
+                headerIndexes.setRoadType(index);
+                break;
+
+            case "p37":
+                headerIndexes.setRoadName(index);
+                break;
+
+        }
+
     }
 
     public String getHeaderValue(String key) {

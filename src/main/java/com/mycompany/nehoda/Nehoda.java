@@ -18,12 +18,12 @@ public class Nehoda {
     public static void main(String[] args) {
         try {
 
-            CsvManager cm = new CsvManager(new File("typNehodyAuta.csv"), ';');
+            CsvManager cm = new CsvManager(new File("iNehody.csv"), ';');
             //cm.loadCsvData();
             //cm.nastavCas(0);
             //cm.writeData();
             //cm.pripravDny();
-            //cm.updateCsvFile();
+            cm.updateCsvFile();
             //cm.prohledejData();
 
         } catch (Exception e) {

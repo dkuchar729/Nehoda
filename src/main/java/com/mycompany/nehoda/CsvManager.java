@@ -79,14 +79,11 @@ public class CsvManager {
             addValue(row, getTrafficDensity(getData(row, ColumnIndex.ROAD_NAME.getColumnIndex()), 1, 5));
         }
 
+        for (int i = rowsToRemove.size() - 1; i > -1; i--) {
 
-for(int i=rowsToRemove.size()-1;i>-1;i--)
-{
+            csvData.remove((int) rowsToRemove.get(i));
 
-    csvData.remove((int)rowsToRemove.get(i));
-
-
-}
+        }
         writeData();
     }
 
@@ -110,7 +107,6 @@ for(int i=rowsToRemove.size()-1;i>-1;i--)
                 hlavniRow = csvData.get(i);
                 rows = new LinkedList<>();
                 rows.add(hlavniRow);
-
 
             }
         }
@@ -143,7 +139,6 @@ for(int i=rowsToRemove.size()-1;i>-1;i--)
                 sprava.pridejDen(rows.get(i));
             }
 
-
             int counter = 1;
             for (int j = i + 1; j < rows.size(); j++) {
 
@@ -155,7 +150,7 @@ for(int i=rowsToRemove.size()-1;i>-1;i--)
 
                     sprava.porovnejDen(rows.get(j));
                     skipRow2.add(j);
-                   
+
                     if (Nastaveni.porovnejDenJednaZaznam(rows.get(i), rows.get(j), 1, 5)) {
                         skipRow.add(j);
 
@@ -179,7 +174,6 @@ for(int i=rowsToRemove.size()-1;i>-1;i--)
                 && Nastaveni.porovnejRadku(row1, row2, stavKomunikace) && Nastaveni.porovnejRadku(row1, row2, viditelnost)
                 && Nastaveni.porovnejRadku(row1, row2, druhKomunikace);
     }
-
 
     public void nastavCas(int index) throws IOException, CsvException {
 
@@ -222,7 +216,6 @@ for(int i=rowsToRemove.size()-1;i>-1;i--)
             actualRow = csvData.get(row);
             sprava.pridej(actualRow);
 
-
             for (int i = row + 1; i < csvData.size(); i++) {
                 if (skipRow.contains(i)) {
                     continue;
@@ -249,6 +242,7 @@ for(int i=rowsToRemove.size()-1;i>-1;i--)
 
         for (int i = 0; i < header.length; i++) {
             updateColumn(0, i, pm.getHeaderValue(header[i]));
+            pm.setHeaderIndex(i, header[i]);
         }
 
     }
