@@ -25,6 +25,7 @@ import java.util.List;
 public class CsvManager {
 
     private File csvFile;
+    private File carsDataFile;
     private CSVReader cr;
     private Sprava sprava;
     private CSVWriter cw;
@@ -44,6 +45,7 @@ public class CsvManager {
         lastDate = LocalDate.MIN;
         sprava = new Sprava();
         columnsToRemove = new LinkedList<>();
+        carsDataFile = new File("IVozidla.csv");
 
     }
 
@@ -59,7 +61,7 @@ public class CsvManager {
                 rowsToRemove.add(row);
                 continue;
             }
-            //System.out.println(pm.getIndexes().getAccidentType());
+
             updateColumn(row, pm.getIndexes().getTown(), pm.getTownValue(getData(row, pm.getIndexes().getTown())));
             updateColumn(row, pm.getIndexes().getAccidentType(), pm.getAccidentTypeValue(getData(row, pm.getIndexes().getAccidentType())));
             updateColumn(row, pm.getIndexes().getGuilty(), pm.getGuiltyValue(getData(row, pm.getIndexes().getGuilty())));
@@ -80,6 +82,8 @@ public class CsvManager {
             addValue(row, pm.getDayOfWeekValue(date.getDayOfWeek().getValue()));
             addWeatherData(row, date, WeatherInfo.JIHOCESKY, 2);
             addValue(row, getTrafficDensity(getData(row, pm.getIndexes().getRoadName()), 1, 5));
+
+            updateColumn(row, pm.getIndexes().getDate(), DateManager.getDefaultDate(getData(row, pm.getIndexes().getDate())).toString());
         }
 
         for (int i = rowsToRemove.size() - 1; i > -1; i--) {
@@ -87,17 +91,28 @@ public class CsvManager {
         }
 
         for (int i = 0; i < csvData.size(); i++) {
-
             String[] arrayRow = csvData.get(i);
             List<String> listRow = new LinkedList<>(Arrays.asList(arrayRow));
 
             for (int columnIndex : columnsToRemove) {
                 listRow.remove(columnIndex);
             }
-
             csvData.set(i, listRow.stream().toArray(String[]::new));
         }
 
+        /*List<String[]> carsData = loadCsvData(carsDataFile, ';');
+
+        for (int row = 1; row < csvData.size(); row++) {
+
+            for (int roww = 1; roww < carsData.size(); roww++) {
+                if (getData(row, pm.getIndexes().getId()).equals(carsData.get(roww)[0])) {
+                    addValue(row, carsData.get(roww)[2]);
+
+                } else {
+                    addValue(row, "null");
+                }
+            }
+        }*/
         writeData();
     }
 
@@ -171,7 +186,6 @@ public class CsvManager {
                         counter++;
                     }
                 }
-
             }
 
             updateColumn(startIndex, 10, String.valueOf(counter));
@@ -189,15 +203,15 @@ public class CsvManager {
                 && Nastaveni.porovnejRadku(row1, row2, druhKomunikace);
     }
 
-    public void nastavCas(int index) throws IOException, CsvException {
+    public void updateTime(int index) throws IOException, CsvException {
 
         for (int i = 1; i < csvData.size(); i++) {
-            updateColumn(i, index, vratCas(getData(i, index)));
+            updateColumn(i, index, getDaytime(getData(i, index)));
         }
 
     }
 
-    public String vratCas(String value) {
+    public String getDaytime(String value) {
         int hodina = Integer.parseInt(value);
 
         if (hodina > -1 && hodina < 6 || hodina > 20 && hodina < 24) {
@@ -259,8 +273,9 @@ public class CsvManager {
                 columnsToRemove.add(i);
             }
             updateColumn(0, i, pm.getHeaderValue(header[i]));
-
         }
+
+        addValues(0, new String[]{"typVozidla", "den", "maxPrumTeplota", "minPrumTeplota", "prumSrazky", "minPrumSrazky", "maxPrumSrazky", "hustotaProvozu"});
         columnsToRemove = columnsToRemove.reversed();
     }
 
@@ -432,6 +447,19 @@ public class CsvManager {
     private void closeCsvWriter() throws IOException {
         cw.flush();
         cw.close();
+    }
+
+    private void getCarData(File carsFile, char delimiter, int searchedRow, String id) throws IOException, CsvException {
+        List<String[]> carsData = loadCsvData(carsFile, delimiter);
+
+        for (int row = 1; row < carsData.size(); row++) {
+            if (id.equals(carsData.get(row)[0])) {
+                addValue(searchedRow, carsData.get(row)[2]);
+
+            }
+        }
+        addValue(searchedRow, "null");
+
     }
 
 }

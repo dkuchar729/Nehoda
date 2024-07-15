@@ -18,12 +18,16 @@ public class Nehoda {
     public static void main(String[] args) {
         try {
 
-            CsvManager cm = new CsvManager(new File("www.csv"), ';');
+            DatabaseManager dm=new DatabaseManager();
+            
+            dm.connect();
+            
+           // CsvManager cm = new CsvManager(new File("www.csv"), ';');
             //cm.loadCsvData();
             //cm.nastavCas(0);
             //cm.writeData();
             //cm.pripravDny();
-            cm.updateCsvFile();
+            //cm.updateCsvFile();
             //cm.prohledejData();
 
         } catch (Exception e) {

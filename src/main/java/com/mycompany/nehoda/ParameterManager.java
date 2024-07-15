@@ -54,17 +54,25 @@ public final class ParameterManager {
         roadState = new HashMap<>();
         vision = new HashMap<>();
 
+        setMapValue(headerValues, "p1", "id");
+        setMapValue(headerValues, "p2a", "datum");
         setMapValue(headerValues, "p2b", "hodina");
+        setMapValue(headerValues, "p5a", "umisteniObec");
         setMapValue(headerValues, "p6", "druhNehody");
         setMapValue(headerValues, "p10", "zavineniNehody");
         setMapValue(headerValues, "p11", "alkohol");
         setMapValue(headerValues, "p12", "pricinaNehody");
         setMapValue(headerValues, "p16", "povrchVozovky");
+        setMapValue(headerValues, "p17", "stavVozovky");
         setMapValue(headerValues, "p18", "povetrnostniPodminky");
         setMapValue(headerValues, "p19", "viditelnost");
+        setMapValue(headerValues, "p20", "rozhled");
         setMapValue(headerValues, "p21", "deleniKomunikace");
+        setMapValue(headerValues, "p22", "situovaniNehody");
+        setMapValue(headerValues, "p27", "specifickeMisto");
         setMapValue(headerValues, "p28", "smerovyPomer");
         setMapValue(headerValues, "p36", "druhKomunikace");
+        setMapValue(headerValues, "p37", "cisloKomunikace");
 
         /*setMapValues(accidentType, new Integer[]{1, 2, 7, 8}, "vozidlo");
         setMapValue(accidentType, 3, "prekazka");
@@ -121,7 +129,7 @@ public final class ParameterManager {
 
         setMapValues(visibility, new Integer[]{1, 4, 6}, "neztizena");
         setMapValue(visibility, 2, "svitani/soumrak");
-        setMapValues(visibility, new Integer[]{3, 5, 7}, "ztizena pocasim");
+        setMapValues(visibility, new Integer[]{3, 5, 7}, "ztizenaPocasim");
 
         setMapValue(roadLine, 1, "dvoupruh");
         setMapValue(roadLine, 2, "tripruh");
@@ -199,43 +207,63 @@ public final class ParameterManager {
 
         //String headerValue = headerValues.get(key);
         switch (key) {
-            case "p1" -> headerIndexes.setId(index);
+            case "p1" ->
+                headerIndexes.setId(index);
 
-            case "p2a" -> headerIndexes.setDate(index);
+            case "p2a" ->
+                headerIndexes.setDate(index);
 
-            case "p2b" -> headerIndexes.setHour(index);
+            case "p2b" ->
+                headerIndexes.setHour(index);
 
-            case "p4b" -> headerIndexes.setRegion(index);
+            case "p4b" ->
+                headerIndexes.setRegion(index);
 
-            case "p5a" -> headerIndexes.setTown(index);
+            case "p5a" ->
+                headerIndexes.setTown(index);
 
-            case "p6" -> headerIndexes.setAccidentType(index);
+            case "p6" ->
+                headerIndexes.setAccidentType(index);
 
-            case "p10" -> headerIndexes.setGuilty(index);
+            case "p10" ->
+                headerIndexes.setGuilty(index);
 
-            case "p11" -> headerIndexes.setAlcohol(index);
+            case "p11" ->
+                headerIndexes.setAlcohol(index);
 
-            case "p12" -> headerIndexes.setCause(index);
+            case "p12" ->
+                headerIndexes.setCause(index);
 
-            case "p16" -> headerIndexes.setSurface(index);
+            case "p16" ->
+                headerIndexes.setSurface(index);
 
-            case "p17" -> headerIndexes.setRoadState(index);
+            case "p17" ->
+                headerIndexes.setRoadState(index);
 
-            case "p18" -> headerIndexes.setWeatherConditions(index);
+            case "p18" ->
+                headerIndexes.setWeatherConditions(index);
 
-            case "p19" -> headerIndexes.setVisibility(index);
+            case "p19" ->
+                headerIndexes.setVisibility(index);
 
-            case "p20" -> headerIndexes.setVision(index);
-            case "p21" -> headerIndexes.setRoadLine(index);
-            case "p22" -> headerIndexes.setRoadArea(index);
+            case "p20" ->
+                headerIndexes.setVision(index);
+            case "p21" ->
+                headerIndexes.setRoadLine(index);
+            case "p22" ->
+                headerIndexes.setRoadArea(index);
 
-            case "p27" -> headerIndexes.setSpecificPlace(index);
+            case "p27" ->
+                headerIndexes.setSpecificPlace(index);
 
-            case "p28" -> headerIndexes.setDirection(index);
+            case "p28" ->
+                headerIndexes.setDirection(index);
 
-            case "p36" -> headerIndexes.setRoadType(index);
+            case "p36" ->
+                headerIndexes.setRoadType(index);
 
-            case "p37" -> headerIndexes.setRoadName(index);
+            case "p37" ->
+                headerIndexes.setRoadName(index);
 
             default -> {
                 return false;
