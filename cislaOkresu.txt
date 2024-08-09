@@ -1,0 +1,7 @@
+1 - české budějovice
+2 - český krumlov
+3 - jidřichův hradec
+5 - písek
+6 - prachatice
+7 - strakonice
+8 - tábor

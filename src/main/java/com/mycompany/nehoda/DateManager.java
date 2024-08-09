@@ -20,9 +20,16 @@ public class DateManager {
         return LocalDate.parse(date, baseDf);
    }
    
+      public static LocalDate getDefaultDate(String date)
+   {
+        return LocalDate.parse(date, defaultDf);
+   }
+   
     
-   public static String getDefaultDate(String date)
+   public static String getDefaultDateAsString(String date)
    {        
        return getBaseDate(date).format(defaultDf);
    }
+   
+ 
 }

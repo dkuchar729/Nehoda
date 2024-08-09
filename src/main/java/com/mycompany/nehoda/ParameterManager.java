@@ -14,6 +14,7 @@ import java.util.Map;
 public final class ParameterManager {
 
     private Indexes headerIndexes;
+    private Map<Integer, String> districts;
     private Map<Integer, String> accidentType;
     private Map<Integer, String> town;
     private Map<Integer, String> daysOfWeek;
@@ -28,14 +29,17 @@ public final class ParameterManager {
     private Map<Integer, String> direction;
     private Map<Integer, String> roadArea;
     private Map<Integer, String> specificPlace;
-
     private Map<Integer, String> roadState;
     private Map<Integer, String> vision;
     private Map<String, String> headerRemoveValues;
     private Map<String, String> headerValues;
 
+    //cars
+    private Map<Integer, String> vehicleTypes;
+
     public ParameterManager() {
         headerIndexes = new Indexes();
+        districts = new HashMap<>();
         accidentType = new HashMap<>();
         daysOfWeek = new HashMap<>();
         guilty = new HashMap<>();
@@ -53,10 +57,15 @@ public final class ParameterManager {
         specificPlace = new HashMap<>();
         roadState = new HashMap<>();
         vision = new HashMap<>();
+        vision = new HashMap<>();
+
+        vehicleTypes = new HashMap<>();
 
         setMapValue(headerValues, "p1", "id");
         setMapValue(headerValues, "p2a", "datum");
         setMapValue(headerValues, "p2b", "hodina");
+        setMapValue(headerValues, "p4a", "kraj");
+        setMapValue(headerValues, "p4b", "okres");
         setMapValue(headerValues, "p5a", "umisteniObec");
         setMapValue(headerValues, "p6", "druhNehody");
         setMapValue(headerValues, "p10", "zavineniNehody");
@@ -73,12 +82,19 @@ public final class ParameterManager {
         setMapValue(headerValues, "p28", "smerovyPomer");
         setMapValue(headerValues, "p36", "druhKomunikace");
         setMapValue(headerValues, "p37", "cisloKomunikace");
+        setMapValue(headerValues, "p44", "typVozidla");
+        setMapValue(headerValues, "h", "obec");
+        setMapValue(headerValues, "d", "souradniceX");
+        setMapValue(headerValues, "e", "souradniceY");
 
-        /*setMapValues(accidentType, new Integer[]{1, 2, 7, 8}, "vozidlo");
-        setMapValue(accidentType, 3, "prekazka");
-        setMapValue(accidentType, 4, "chodec");
-        setMapValues(accidentType, new Integer[]{5, 6}, "zvire");
-        setMapValues(accidentType, new Integer[]{0, 9}, "ostatni");*/
+        setMapValue(districts, 1, "ceskeBudejovice");
+        setMapValue(districts, 2, "ceskyKrumlov");
+        setMapValue(districts, 3, "jindrichuvHradec");
+        setMapValue(districts, 5, "pisek");
+        setMapValue(districts, 6, "prachatice");
+        setMapValue(districts, 7, "strakonice");
+        setMapValue(districts, 8, "tabor");
+
         setMapValues(accidentType, new Integer[]{1}, "srazkaVozidlo");
         setMapValues(accidentType, new Integer[]{2}, "srazkaOdstaveneVozidlo");
         setMapValue(accidentType, 3, "prekazka");
@@ -191,6 +207,18 @@ public final class ParameterManager {
 
         setMapValue(vision, 1, "dobre");
         setMapValues(vision, new Integer[]{0, 2, 3, 4, 5, 6, 7}, "spatne");
+
+        setMapValues(vehicleTypes, new Integer[]{0, 1, 2}, "motocykl");
+        setMapValues(vehicleTypes, new Integer[]{3, 4}, "osobniAutomobil");
+        setMapValues(vehicleTypes, new Integer[]{5, 6, 7}, "nakladniAutomobil");
+        setMapValue(vehicleTypes, 8, "autobus");
+        setMapValue(vehicleTypes, 9, "traktor");
+        setMapValue(vehicleTypes, 10, "tramvaj");
+        setMapValue(vehicleTypes, 11, "trolejbus");
+        setMapValue(vehicleTypes, 13, "jizdniKolo");
+        setMapValue(vehicleTypes, 8, "autobus");
+        setMapValue(vehicleTypes, 16, "vlak");
+        setMapValues(vehicleTypes, new Integer[]{12, 14, 15, 17, 18}, "ostatni");
     }
 
     public <A, B> void setMapValues(Map<A, B> map, A[] keys, B value) {
@@ -214,10 +242,13 @@ public final class ParameterManager {
                 headerIndexes.setDate(index);
 
             case "p2b" ->
-                headerIndexes.setHour(index);
+                headerIndexes.setTime(index);
+
+            case "p4a" ->
+                headerIndexes.setRegion(index);
 
             case "p4b" ->
-                headerIndexes.setRegion(index);
+                headerIndexes.setDistrict(index);
 
             case "p5a" ->
                 headerIndexes.setTown(index);
@@ -265,6 +296,18 @@ public final class ParameterManager {
             case "p37" ->
                 headerIndexes.setRoadName(index);
 
+            case "p44" ->
+                headerIndexes.setVehicleType(index);
+                
+                  case "h" ->
+                headerIndexes.setT(index);
+                
+                  case "d" ->
+                headerIndexes.setcX(index);
+                
+                  case "e" ->
+                headerIndexes.setcY(index);
+
             default -> {
                 return false;
             }
@@ -283,6 +326,10 @@ public final class ParameterManager {
 
         return key;
 
+    }
+
+    public String getDistrictValue(String key) {
+        return getValue(districts, key);
     }
 
     public String getTownValue(String key) {
@@ -354,6 +401,10 @@ public final class ParameterManager {
 
     public String getDirectionValue(String key) {
         return getValue(direction, key);
+    }
+
+    public String getVehicleType(String key) {
+        return getValue(vehicleTypes, key);
     }
 
     private String getValue(Map<Integer, String> map, String key) {

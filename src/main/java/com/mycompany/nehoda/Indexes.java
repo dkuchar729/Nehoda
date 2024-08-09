@@ -10,27 +10,61 @@ package com.mycompany.nehoda;
  */
 public class Indexes {
 
-    private int id=-1;
-    private int date=-1;
-    private int hour=-1;
-    private int region=-1;
-    private int town=-1;
-    private int accidentType=-1;
-    private int guilty=-1;;
-    private int alcohol=-1;
-    private int cause=-1;
-    private int surface=-1;
-    private int roadState=-1;
-    private int weatherConditions=-1;
-    private int visibility=-1;
-    private int vision=-1;
-    private int roadLine=-1;
-    private int roadArea=-1;
-    private int specificPlace=-1;
-    private int direction=-1;
-    private int roadType=-1;
-    private int roadName=-1;
-    private int roadDensity=-1;
+    private int id;
+    private int date;
+    private int time;
+    private int region;
+    private int district;
+    private int town;
+    private int accidentType;
+    private int guilty;
+    private int alcohol;
+    private int cause;
+    private int surface;
+    private int roadState;
+    private int weatherConditions;
+    private int visibility;
+    private int vision;
+    private int roadLine;
+    private int roadArea;
+    private int specificPlace;
+    private int direction;
+    private int roadType;
+    private int roadName;
+    private int roadDensity;
+    private int vehicleType;
+    private int cX;
+    private int cY;
+    private int t;
+
+    public Indexes() {
+        id = -1;
+        date = -1;
+        time = -1;
+        region = -1;
+        district = -1;
+        town = -1;
+        accidentType = -1;
+        guilty = -1;
+        alcohol = -1;
+        cause = -1;
+        surface = -1;
+        roadState = -1;
+        weatherConditions = -1;
+        visibility = -1;
+        vision = -1;
+        roadLine = -1;
+        roadArea = -1;
+        specificPlace = -1;
+        direction = -1;
+        roadType = -1;
+        roadName = -1;
+        roadDensity = -1;
+        vehicleType = -1;
+        cX = -1;
+        cY = -1;
+        t = -1;
+    }
 
     /**
      * @return the id
@@ -63,15 +97,15 @@ public class Indexes {
     /**
      * @return the hour
      */
-    public int getHour() {
-        return hour;
+    public int getTime() {
+        return time;
     }
 
     /**
-     * @param hour the hour to set
+     * @param time the hour to set
      */
-    public void setHour(int hour) {
-        this.hour = hour;
+    public void setTime(int time) {
+        this.time = time;
     }
 
     /**
@@ -86,6 +120,14 @@ public class Indexes {
      */
     public void setRegion(int region) {
         this.region = region;
+    }
+
+    public int getDistrict() {
+        return district;
+    }
+
+    public void setDistrict(int district) {
+        this.district = district;
     }
 
     /**
@@ -326,5 +368,54 @@ public class Indexes {
         this.roadDensity = roadDensity;
     }
 
-    
+    public void setVehicleType(int vehicleType) {
+        this.vehicleType = vehicleType;
+    }
+
+    public int getVehicleType() {
+        return vehicleType;
+    }
+
+    /**
+     * @return the cX
+     */
+    public int getcX() {
+        return cX;
+    }
+
+    /**
+     * @param cX the cX to set
+     */
+    public void setcX(int cX) {
+        this.cX = cX;
+    }
+
+    /**
+     * @return the cY
+     */
+    public int getcY() {
+        return cY;
+    }
+
+    /**
+     * @param cY the cY to set
+     */
+    public void setcY(int cY) {
+        this.cY = cY;
+    }
+
+    /**
+     * @return the t
+     */
+    public int getT() {
+        return t;
+    }
+
+    /**
+     * @param t the t to set
+     */
+    public void setT(int t) {
+        this.t = t;
+    }
+
 }

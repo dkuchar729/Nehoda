@@ -3,6 +3,9 @@
  */
 package com.mycompany.nehoda;
 
+import com.mycompany.nehoda.CsvManagers.CsvManager;
+import com.mycompany.nehoda.CsvManagers.*;
+
 import java.io.File;
 import java.time.LocalDate;
 import java.time.Month;
@@ -18,18 +21,21 @@ public class Nehoda {
     public static void main(String[] args) {
         try {
 
-            DatabaseManager dm=new DatabaseManager();
+            CsvManager cm = new CsvManager(new File("predpovedNehody.csv"), ',');
+           // cm.updateOlderCsvFile();
+            //cm.updateCsvFile();               
+           // cm.loadToDatabase();
+            // cm.addDatabaseDataToFile();
+cm.addId();
             
-            dm.connect();
-            
-           // CsvManager cm = new CsvManager(new File("www.csv"), ';');
-            //cm.loadCsvData();
-            //cm.nastavCas(0);
-            //cm.writeData();
-            //cm.pripravDny();
-            //cm.updateCsvFile();
-            //cm.prohledejData();
-
+            //cm.pripravDny();            
+             //cm.createAccidentRecords();
+            //VehicleCsvFileManager vcm=new VehicleCsvFileManager(new File("IVozidla.csv"), ';');           
+            //vcm.addVehicleTypeToDatabase();
+            //vcm.updateCsvFile();
+            //CoordinatesCsvManager csm=new CoordinatesCsvManager(new File("souradnice.csv"), ';');
+            // csm.addCoordinatesDataToDatabase();
+            //cm.sortByCoordinates(755830,1166150,500);
         } catch (Exception e) {
             e.printStackTrace();
         }
