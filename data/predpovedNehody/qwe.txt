@@ -1,0 +1,2 @@
+20723000217
+rano;obec;srazkaVozidlo;ridic;ano;zpusobJizdy;suchy;dobry;neztizene;neztizena;dobre;dvoupruh;jizdniPruh;ostatni;primyUsek;1.trida;sobota;-1134509.0;-794666.0;35.0;12.5;0.0;20723000227

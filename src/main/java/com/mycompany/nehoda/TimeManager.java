@@ -12,6 +12,7 @@ public class TimeManager {
 
     
     public static String returnHour(String time) {
+       
         switch (time.length()) {
             case 1:
                 return "0";

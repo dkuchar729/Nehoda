@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class AccidentRecordManager {
 
-    private AccidentRecordsCreator lastAccidentRecordsCreator;
+   public   AccidentRecordsCreator lastAccidentRecordsCreator;
     private final List<AccidentRecordsCreator> arcList;
 
     public AccidentRecordManager() {
@@ -33,15 +33,15 @@ public class AccidentRecordManager {
         return arcList;
     }
 
-    /*
-     public void pridejDen(String[] row) {
-        lastNastaveni = new Nastaveni(row);
-        lastNastaveni.compareDay(row);
-        seznam.add(lastNastaveni);
+    
+     public void pridejDen(String[] row,double d1,int range) {
+       lastAccidentRecordsCreator = new AccidentRecordsCreator(row);
+        lastAccidentRecordsCreator.compareDay(row,d1,range);
+       arcList.add(lastAccidentRecordsCreator);
     }
 
-    public boolean porovnejDen(String[] row) {
-        return lastNastaveni.compareDay(row);
+    public boolean porovnejDen(String[] row,double d1,int range) {
+        return lastAccidentRecordsCreator.compareDay(row,d1,range);
     }
-     */
+     
 }

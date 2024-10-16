@@ -31,7 +31,11 @@ public final class ParameterManager {
     private Map<Integer, String> specificPlace;
     private Map<Integer, String> roadState;
     private Map<Integer, String> vision;
-    private Map<String, String> headerRemoveValues;
+    private Map<Integer, String> natureOfAccident;
+    private Map<Integer, String> accidentSeverity;
+    private Map<Integer, String> vehicleCrashType;
+    private Map<Integer, String> obstacleCrashType;
+    private Map<Integer, String> roadSurfaceType;
     private Map<String, String> headerValues;
 
     //cars
@@ -57,9 +61,13 @@ public final class ParameterManager {
         specificPlace = new HashMap<>();
         roadState = new HashMap<>();
         vision = new HashMap<>();
-        vision = new HashMap<>();
-
+        natureOfAccident = new HashMap<>();
+        accidentSeverity = new HashMap<>();
+        roadSurfaceType = new HashMap<>();
         vehicleTypes = new HashMap<>();
+
+        vehicleCrashType = new HashMap<>();
+        obstacleCrashType = new HashMap<>();
 
         setMapValue(headerValues, "p1", "id");
         setMapValue(headerValues, "p2a", "datum");
@@ -68,9 +76,17 @@ public final class ParameterManager {
         setMapValue(headerValues, "p4b", "okres");
         setMapValue(headerValues, "p5a", "umisteniObec");
         setMapValue(headerValues, "p6", "druhNehody");
+        setMapValue(headerValues, "p7", "typSrazkyVozidlo");
+        setMapValue(headerValues, "p8", "typSrazkyPrekazka");
+        setMapValue(headerValues, "p9", "charakterNehody");
         setMapValue(headerValues, "p10", "zavineniNehody");
         setMapValue(headerValues, "p11", "alkohol");
         setMapValue(headerValues, "p12", "pricinaNehody");
+        setMapValue(headerValues, "p13a", "usmrcenoOsob");
+        setMapValue(headerValues, "p13b", "tezceZranenoOsob");
+        setMapValue(headerValues, "p13c", "lehceZranenoOsob");
+                setMapValue(headerValues, "p14", "celkovaCastka");
+        setMapValue(headerValues, "p15", "druhPovrchu");
         setMapValue(headerValues, "p16", "povrchVozovky");
         setMapValue(headerValues, "p17", "stavVozovky");
         setMapValue(headerValues, "p18", "povetrnostniPodminky");
@@ -80,6 +96,7 @@ public final class ParameterManager {
         setMapValue(headerValues, "p22", "situovaniNehody");
         setMapValue(headerValues, "p27", "specifickeMisto");
         setMapValue(headerValues, "p28", "smerovyPomer");
+        setMapValue(headerValues, "p34", "pocetVozidel");
         setMapValue(headerValues, "p36", "druhKomunikace");
         setMapValue(headerValues, "p37", "cisloKomunikace");
         setMapValue(headerValues, "p44", "typVozidla");
@@ -219,6 +236,38 @@ public final class ParameterManager {
         setMapValue(vehicleTypes, 8, "autobus");
         setMapValue(vehicleTypes, 16, "vlak");
         setMapValues(vehicleTypes, new Integer[]{12, 14, 15, 17, 18}, "ostatni");
+
+        setMapValue(natureOfAccident, 1, "nasledkyNaZivote");
+        setMapValue(natureOfAccident, 2, "hmotnaCastka");
+
+        setMapValue(accidentSeverity, 1, "hmotnaCastka");
+        setMapValue(accidentSeverity, 2, "lehceZavaznaNehoda");
+        setMapValue(accidentSeverity, 3, "zavaznaNehoda");
+        setMapValue(accidentSeverity, 4, "smrtelnaNehoda");
+
+        setMapValue(vehicleCrashType, 1, "celni");
+        setMapValue(vehicleCrashType, 2, "bocni");
+        setMapValue(vehicleCrashType, 3, "bok");
+        setMapValue(vehicleCrashType, 4, "zezadu");
+        setMapValue(vehicleCrashType, 0, "nejednaSeOSrazkuJedoucihoVozidla");
+
+        setMapValue(obstacleCrashType, 1, "strom");
+        setMapValue(obstacleCrashType, 2, "sloup");
+        setMapValue(obstacleCrashType, 3, "odraznik/patnik");
+        setMapValue(obstacleCrashType, 4, "svodilo");
+        setMapValue(obstacleCrashType, 5, "prekazkaVzniklaJinymVozidlem");
+        setMapValue(obstacleCrashType, 6, "zed/pevnaCastMostu");
+        setMapValue(obstacleCrashType, 7, "zavory");
+        setMapValue(obstacleCrashType, 8, "prekazkaVzniklaStavebniCinnosti");
+        setMapValue(obstacleCrashType, 9, "ostatni");
+        setMapValue(obstacleCrashType, 0, "nejednaSeOPrekazku");
+
+        setMapValue(roadSurfaceType, 1, "dlazba");
+        setMapValue(roadSurfaceType, 2, "zivice");
+        setMapValue(roadSurfaceType, 3, "beton");
+        setMapValue(roadSurfaceType, 4, "panely");
+        setMapValue(roadSurfaceType, 5, "sterk");
+        setMapValue(roadSurfaceType, 6, "jinyNezpevnenyPovrch");
     }
 
     public <A, B> void setMapValues(Map<A, B> map, A[] keys, B value) {
@@ -236,8 +285,8 @@ public final class ParameterManager {
         //String headerValue = headerValues.get(key);
         switch (key) {
             case "p1" ->
-                headerIndexes.setId(index);
 
+                headerIndexes.setId(index);
             case "p2a" ->
                 headerIndexes.setDate(index);
 
@@ -256,6 +305,12 @@ public final class ParameterManager {
             case "p6" ->
                 headerIndexes.setAccidentType(index);
 
+            case "p7" ->
+                headerIndexes.setVehicleCrashType(index);
+
+            case "p8" ->
+                headerIndexes.setObstacleCrashType(index);
+
             case "p10" ->
                 headerIndexes.setGuilty(index);
 
@@ -264,6 +319,9 @@ public final class ParameterManager {
 
             case "p12" ->
                 headerIndexes.setCause(index);
+
+            case "p15" ->
+                headerIndexes.setRoadSurfaceType(index);
 
             case "p16" ->
                 headerIndexes.setSurface(index);
@@ -289,6 +347,8 @@ public final class ParameterManager {
 
             case "p28" ->
                 headerIndexes.setDirection(index);
+            case "34" ->
+                headerIndexes.setVehicleNumber(index);
 
             case "p36" ->
                 headerIndexes.setRoadType(index);
@@ -298,15 +358,45 @@ public final class ParameterManager {
 
             case "p44" ->
                 headerIndexes.setVehicleType(index);
-                
-                  case "h" ->
+
+            case "h" ->
                 headerIndexes.setT(index);
-                
-                  case "d" ->
+
+            case "d" ->
                 headerIndexes.setcX(index);
-                
-                  case "e" ->
+
+            case "e" ->
                 headerIndexes.setcY(index);
+
+            case "zavaznostNehody" ->
+                headerIndexes.setAccidentSeverity(index);
+
+            case "p34" ->
+                headerIndexes.setAccidentSeverity(index);
+
+            case "p9" -> {
+                headerIndexes.setNatureOfAccident(index);
+                return false;
+            }
+
+            case "p13a" -> {
+                headerIndexes.setFatalAccident(index);
+              
+            }
+
+            case "p13b" -> {
+                headerIndexes.setSeriousAccident(index);
+                
+            }
+            case "p13c" -> {
+                headerIndexes.setMinorAccident(index);
+               
+            }
+            
+              case "p14" -> {
+                headerIndexes.setTotalAmount(index);
+               
+            }
 
             default -> {
                 return false;
@@ -407,6 +497,26 @@ public final class ParameterManager {
         return getValue(vehicleTypes, key);
     }
 
+    public String getAccidentSeverity(String key) {
+
+        return getValue(getAccidentSeverity(), key);
+    }
+    
+     public String getVehicleCrashType(String key) {
+
+        return getValue(vehicleCrashType, key);
+    }
+     
+       public String getObstacleCrashType(String key) {
+
+        return getValue(obstacleCrashType, key);
+    }
+       
+         public String getRoadSurfaceType(String key) {
+
+        return getValue(roadSurfaceType, key);
+    }
+
     private String getValue(Map<Integer, String> map, String key) {
 
         try {
@@ -423,5 +533,33 @@ public final class ParameterManager {
 
     public Indexes getIndexes() {
         return headerIndexes;
+    }
+
+    /**
+     * @return the natureOfAccident
+     */
+    public Map<Integer, String> getNatureOfAccident() {
+        return natureOfAccident;
+    }
+
+    /**
+     * @param natureOfAccident the natureOfAccident to set
+     */
+    public void setNatureOfAccident(Map<Integer, String> natureOfAccident) {
+        this.natureOfAccident = natureOfAccident;
+    }
+
+    /**
+     * @return the accidentSeverity
+     */
+    public Map<Integer, String> getAccidentSeverity() {
+        return accidentSeverity;
+    }
+
+    /**
+     * @param accidentSeverity the accidentSeverity to set
+     */
+    public void setAccidentSeverity(Map<Integer, String> accidentSeverity) {
+        this.accidentSeverity = accidentSeverity;
     }
 }

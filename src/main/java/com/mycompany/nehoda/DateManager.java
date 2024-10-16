@@ -12,8 +12,8 @@ import java.time.format.DateTimeFormatter;
  * @author dorgu
  */
 public class DateManager {
-   private static final DateTimeFormatter baseDf=DateTimeFormatter.ofPattern("dd.MM.yyyy"); 
-   private static final DateTimeFormatter defaultDf=DateTimeFormatter.ofPattern("yyyy-MM-dd"); 
+   public static final DateTimeFormatter baseDf=DateTimeFormatter.ofPattern("dd.MM.yyyy"); 
+   public static final DateTimeFormatter defaultDf=DateTimeFormatter.ofPattern("yyyy-MM-dd"); 
    
    public static LocalDate getBaseDate(String date)
    {

@@ -21,6 +21,16 @@ public class AccidentRecordsCreator {
     private final Map<String, Map<String, Boolean>> crossroads;
     private final Map<String, Map<String, Boolean>> roundabout;
 
+    Map<String, Map<String, Boolean>> havarie;
+    Map<String, Map<String, Boolean>> prekazka;
+    Map<String, Map<String, Boolean>> zvire;
+    Map<String, Map<String, Boolean>> srazkaVozidlo;
+    Map<String, Map<String, Boolean>> tramvaj;
+    Map<String, Map<String, Boolean>> srazkaVlak;
+    Map<String, Map<String, Boolean>> srazkaOdstaveneVozidlo;
+    Map<String, Map<String, Boolean>> chodec;
+    Map<String, Map<String, Boolean>> ostatni;
+/*
     private int time = 0;
     private int accidentUrbanLocation = 1;
     private int accidentType = 2;
@@ -37,7 +47,31 @@ public class AccidentRecordsCreator {
     private int direction = 14;
     private int roadType = 15;
     private int day = 16;
-    private int result = 20;
+    private int result = 21;
+*/
+    private int density = 10;
+    
+    private int time = -1;
+    private int accidentUrbanLocation = 1;
+    private int accidentType = 1;
+    private int guilty = 3;
+    private int cause = 5;
+    private int surface = 2;
+    private int roadState = 3;
+    private int weatherConditions = 8;
+    private int visibility = 4;
+    private int vision = 10;
+    private int roadLines = 11;
+    private int accidentLocation = 12;
+    private int specificPlace = 13;
+    private int direction = 14;
+    private int roadType = 5;
+    private int day = 6;
+   
+    private int result = 11;
+     
+
+    private List<Map<String, Map<String, Boolean>>> seznamDen = createAccidentTypeList(new String[]{"srazkaVozidlo", "srazkaOdstaveneVozidlo", "prekazka", "chodec", "zvire", "srazkaVlak", "srazkaTramvaj", "havarie", "ostatni"});
 
     public AccidentRecordsCreator(String[] row) {
 
@@ -194,6 +228,10 @@ public class AccidentRecordsCreator {
         return surface;
     }
 
+    public int getDensity() {
+        return density;
+    }
+
     /**
      * @return the roadState
      */
@@ -271,16 +309,34 @@ public class AccidentRecordsCreator {
         return result;
     }
 
-    /*public static boolean porovnejDenDvaZaznam(String[] firstRow, String[] secondRow, int surface, int roadState, int visibility) {
-        return Nastaveni.compareRowsItem(firstRow, secondRow, surface) && Nastaveni.compareRowsItem(firstRow, secondRow, roadState)
-                && Nastaveni.compareRowsItem(firstRow, secondRow, visibility);
+    public static boolean porovnejDenDvaZaznam(String[] firstRow, String[] secondRow, int surface, int roadState, int visibility) {
+        return AccidentRecordsCreator.compareRowsItem(firstRow, secondRow, surface) && AccidentRecordsCreator.compareRowsItem(firstRow, secondRow, roadState)
+                && AccidentRecordsCreator.compareRowsItem(firstRow, secondRow, visibility);
     }
 
-    public static boolean porovnejDenJednaZaznam(String[] firstRow, String[] secondRow, int accidentType, int roadType) {
-        return Nastaveni.compareRowsItem(firstRow, secondRow, accidentType) && Nastaveni.compareRowsItem(firstRow, secondRow, roadType);
+    public static boolean compareIdenticalRow(String[] firstRow, String[] secondRow, int accidentType, int roadType) {
+        return AccidentRecordsCreator.compareRowsItem(firstRow, secondRow, accidentType) && AccidentRecordsCreator.compareRowsItem(firstRow, secondRow, roadType);
     }
-    
-      public boolean compareDay(String[] radka) {
+
+    public boolean compareDay(String[] radka, double d1,int range) {
+
+        if (porovnejDenDvaZaznam(row, radka, getSurface(), getRoadState(), getVisibility())
+                 && checkDensity(Double.parseDouble(row[density]), d1,range)
+                ) {//  && checkDensity(Double.parseDouble(row[density]), d1,1000)  Double.parseDouble(radka[density]
+
+            for (int i = 0; i < seznamDen.size(); i++) {
+
+                if (seznamDen.get(i).containsKey(radka[getAccidentType()])) {
+                    seznamDen.get(i).get(radka[getAccidentType()]).put(radka[getRoadType()], true);
+                    return compareIdenticalRow(row, radka, getAccidentType(), getRoadType());
+                }
+            }
+
+        }
+        return false;
+    }
+
+    public boolean compareDay(String[] radka, boolean density) {
 
         if (porovnejDenDvaZaznam(row, radka, getSurface(), getRoadState(), getVisibility())) {
 
@@ -288,17 +344,15 @@ public class AccidentRecordsCreator {
 
                 if (seznamDen.get(i).containsKey(radka[getAccidentType()])) {
                     seznamDen.get(i).get(radka[getAccidentType()]).put(radka[getRoadType()], true);
-                    return porovnejDenJednaZaznam(row, radka, getAccidentType(), getRoadType());
+                    return compareIdenticalRow(row, radka, getAccidentType(), getRoadType());
                 }
             }
 
         }
         return false;
     }
-   
-    
-    
-        public List<String[]> vratDnyRadky(int druhNehody, int druhKomunikace, int pocet) {
+
+    public List<String[]> vratDnyRadky(int druhNehody, int druhKomunikace, int pocet) {
 
         List<String[]> seznamRadek = new LinkedList<>();
         for (Map<String, Map<String, Boolean>> mapa : seznamDen) {
@@ -322,34 +376,14 @@ public class AccidentRecordsCreator {
         }
         return seznamRadek;
     }
-    
-        /* Map<String, Map<String, Boolean>> havarie;
-    Map<String, Map<String, Boolean>> prekazka;
-    Map<String, Map<String, Boolean>> zvire;
-    Map<String, Map<String, Boolean>> srazkaVozidlo;
-    Map<String, Map<String, Boolean>> tramvaj;
-    Map<String, Map<String, Boolean>> srazkaVlak;
-    Map<String, Map<String, Boolean>> srazkaOdstaveneVozidlo;
-    Map<String, Map<String, Boolean>> chodec;
-    Map<String, Map<String, Boolean>> ostatni;*/
- /* int time = -1;
-    private int accidentUrbanLocation = 1;
-    private  int accidentType = 1;
-   private  int guilty = 3;
-   private  int cause = 5;
-  private   int surface  = 2;
-  private   int roadState = 3;
-  private   int weatherConditions = 8;
-  private   int visibility = 4;
-  private   intvision= 10;
-  private   int roadLines = 11;
-  private   int accidentLocation = 12;
-  private   int specificPlace = 13;
-  private   int direction = 14;
-  private   int roadType= 5;
-  private   int day=6;
-  private   int  result =10;
-        private List<Map<String, Map<String, Boolean>>> seznamDencreateAccidentTypeList(new String[]{"srazkaVozidlo", "srazkaOdstaveneVozidlo", "prekazka", "chodec", "zvire", "srazkaVlak", "srazkaTramvaj", "havarie", "ostatni"});
 
-     */
+    public static boolean checkDensity(double actualDensity, double newDensity, int range) {
+
+        return range >= Math.sqrt(Math.pow(actualDensity - newDensity, 2));
+    }
+
+    public static boolean checkDensityy(double actualDensity, double newDensity, int range) {
+        return ((int) actualDensity / range) == ((int) newDensity / range);
+
+    }
 }

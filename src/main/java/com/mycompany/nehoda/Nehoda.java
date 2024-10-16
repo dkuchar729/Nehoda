@@ -5,6 +5,7 @@ package com.mycompany.nehoda;
 
 import com.mycompany.nehoda.CsvManagers.CsvManager;
 import com.mycompany.nehoda.CsvManagers.*;
+import com.mycompany.nehoda.DatabaseManagers.AccidentDatabaseManager;
 
 import java.io.File;
 import java.time.LocalDate;
@@ -21,15 +22,47 @@ public class Nehoda {
     public static void main(String[] args) {
         try {
 
-            CsvManager cm = new CsvManager(new File("predpovedNehody.csv"), ',');
-           // cm.updateOlderCsvFile();
-            //cm.updateCsvFile();               
-           // cm.loadToDatabase();
-            // cm.addDatabaseDataToFile();
-cm.addId();
+//data/predpovedNehody/nehodyVsechny.csv
+            CsvManager cm = new CsvManager(new File("nehody20Original.csv"), ';');//data/pocetNehodDen/nehody22Upravenee.csv
             
-            //cm.pripravDny();            
-             //cm.createAccidentRecords();
+            //predpovedNehody
+            //cm.addAltitude();
+            //cm.createDupliciteRecords(20);
+            //cm.cccreateAccidentRecords(50,50);
+            //cm.vypiss();
+            // cm.loadAllToDatabase();
+            //cm.loadFromDatabase(AccidentRecord.allHeaderRow,false);
+            //cm.vypiss();
+            //cm.loadInfo3ToDatabase();
+            //cm.loadAccidentSeverityToDatabase();
+            //cm.loadFromDatabase();
+            //cm.filter();
+          
+            //cm.createDupliciteRecords(10);
+//cm.createAccidentRecordsAltitude(70);
+            
+            cm.loadAllToDatabase();
+            //obecne
+            //cm.removeMissingValues(22);
+            //cm.updateTime(2);
+               //cm.addId();
+                //cm.updateOlderCsvFile();
+                  //cm.updateCsvFile();
+            
+            //pocet nehod za den
+            //cm.sortByDate(0);
+            //cm.pripravDny(2000);
+                //cm.removeMissingValues(11);
+                //cm.removeDate(0);
+         
+            // cm.sortByDay(5);
+         
+            
+            // cm.loadToDatabase();
+            // cm.addDatabaseDataToFile();
+            //cm.createAccidentRecords();
+            //cm.addId();
+            
             //VehicleCsvFileManager vcm=new VehicleCsvFileManager(new File("IVozidla.csv"), ';');           
             //vcm.addVehicleTypeToDatabase();
             //vcm.updateCsvFile();

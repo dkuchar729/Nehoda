@@ -36,7 +36,16 @@ public class Indexes {
     private int cX;
     private int cY;
     private int t;
-
+    private int natureOfAccident;
+    private int fatalAccident;
+    private int seriousAccident;
+    private int minorAccident;
+    private int accidentSeverity;
+    private int vehicleCrashType;
+    private int obstacleCrashType;
+    private int roadSurfaceType;
+      private int vehicleNumber;
+ private int totalAmount;
     public Indexes() {
         id = -1;
         date = -1;
@@ -64,6 +73,16 @@ public class Indexes {
         cX = -1;
         cY = -1;
         t = -1;
+        natureOfAccident = -1;
+        fatalAccident = -1;
+        seriousAccident = -1;
+        minorAccident = -1;
+        accidentSeverity = -1;
+        vehicleCrashType = -1;
+        obstacleCrashType = -1;
+        roadSurfaceType = -1;
+        vehicleNumber=-1;
+        totalAmount=-1;
     }
 
     /**
@@ -416,6 +435,146 @@ public class Indexes {
      */
     public void setT(int t) {
         this.t = t;
+    }
+
+    /**
+     * @return the natureOfAccident
+     */
+    public int getNatureOfAccident() {
+        return natureOfAccident;
+    }
+
+    /**
+     * @param natureOfAccident the natureOfAccident to set
+     */
+    public void setNatureOfAccident(int natureOfAccident) {
+        this.natureOfAccident = natureOfAccident;
+    }
+
+    /**
+     * @return the accidentSeverity
+     */
+    public int getAccidentSeverity() {
+        return accidentSeverity;
+    }
+
+    /**
+     * @param accidentSeverity the accidentSeverity to set
+     */
+    public void setAccidentSeverity(int accidentSeverity) {
+        this.accidentSeverity = accidentSeverity;
+    }
+
+    /**
+     * @return the fatalAccident
+     */
+    public int getFatalAccident() {
+        return fatalAccident;
+    }
+
+    /**
+     * @param fatalAccident the fatalAccident to set
+     */
+    public void setFatalAccident(int fatalAccident) {
+        this.fatalAccident = fatalAccident;
+    }
+
+    /**
+     * @return the seriousAccident
+     */
+    public int getSeriousAccident() {
+        return seriousAccident;
+    }
+
+    /**
+     * @param seriousAccident the seriousAccident to set
+     */
+    public void setSeriousAccident(int seriousAccident) {
+        this.seriousAccident = seriousAccident;
+    }
+
+    /**
+     * @return the minorAccident
+     */
+    public int getMinorAccident() {
+        return minorAccident;
+    }
+
+    /**
+     * @param minorAccident the minorAccident to set
+     */
+    public void setMinorAccident(int minorAccident) {
+        this.minorAccident = minorAccident;
+    }
+
+    /**
+     * @return the vehicleCrashType
+     */
+    public int getVehicleCrashType() {
+        return vehicleCrashType;
+    }
+
+    /**
+     * @param vehicleCrashType the vehicleCrashType to set
+     */
+    public void setVehicleCrashType(int vehicleCrashType) {
+        this.vehicleCrashType = vehicleCrashType;
+    }
+
+    /**
+     * @return the obstacleCrashType
+     */
+    public int getObstacleCrashType() {
+        return obstacleCrashType;
+    }
+
+    /**
+     * @param obstacleCrashType the obstacleCrashType to set
+     */
+    public void setObstacleCrashType(int obstacleCrashType) {
+        this.obstacleCrashType = obstacleCrashType;
+    }
+
+    /**
+     * @return the roadSurfaceType
+     */
+    public int getRoadSurfaceType() {
+        return roadSurfaceType;
+    }
+
+    /**
+     * @param roadSurfaceType the roadSurfaceType to set
+     */
+    public void setRoadSurfaceType(int roadSurfaceType) {
+        this.roadSurfaceType = roadSurfaceType;
+    }
+
+    /**
+     * @return the vehicleNumber
+     */
+    public int getVehicleNumber() {
+        return vehicleNumber;
+    }
+
+    /**
+     * @param vehicleNumber the vehicleNumber to set
+     */
+    public void setVehicleNumber(int vehicleNumber) {
+        this.vehicleNumber = vehicleNumber;
+    }
+
+    /**
+     * @return the totalAmount
+     */
+    public int getTotalAmount() {
+        return totalAmount;
+    }
+
+    /**
+     * @param totalAmount the totalAmount to set
+     */
+    public void setTotalAmount(int totalAmount) {
+        this.totalAmount = totalAmount;
     }
 
 }

@@ -1,0 +1,8 @@
+datum;druhNehody;povrchVozovky;stavVozovky;viditelnost;druhKomunikace;den;maxPrumTeplota;minPrumTeplota;prumSrazky;hustotaProvozu;vysledek
+01.01.2021;prekazka;mokry;dobry;neztizena;2.trida;patek;2.3;-6.5;0.0;927;
+01.01.2021;prekazka;naledi/snih;dobry;svitani/soumrak;2.trida;patek;2.3;-6.5;0.0;2530;
+01.01.2021;prekazka;suchy;dobry;neztizena;2.trida;patek;2.3;-6.5;0.0;4022;
+01.01.2021;prekazka;suchy;dobry;neztizena;1.trida;patek;2.3;-6.5;0.0;7242;
+01.01.2021;srazkaVozidlo;mokry;dobry;neztizena;1.trida;patek;2.3;-6.5;0.0;12076;
+01.01.2021;havarie;mokry;dobry;neztizena;1.trida;patek;2.3;-6.5;0.0;13536;
+01.01.2021;havarie;mokry;dobry;neztizena;2.trida;patek;2.3;-6.5;0.0;14537;
