@@ -1,0 +1,16 @@
+com\mycompany\nehoda\CsvManagers\CsvManager.class
+com\mycompany\nehoda\DatabaseManagers\AccidentDatabaseManager.class
+com\mycompany\nehoda\AccidentRecordManager.class
+com\mycompany\nehoda\CsvManagers\CoordinatesCsvManager.class
+com\mycompany\nehoda\AccidentRecord.class
+com\mycompany\nehoda\AccidentRecordsCreator.class
+com\mycompany\nehoda\Indexes.class
+com\mycompany\nehoda\TimeManager.class
+com\mycompany\nehoda\Nehoda.class
+com\mycompany\nehoda\WeatherInfo.class
+com\mycompany\nehoda\CsvManagers\VehicleCsvFileManager.class
+com\mycompany\nehoda\DatabaseManagers\VehicleDatabaseManager.class
+com\mycompany\nehoda\DateManager.class
+com\mycompany\nehoda\ParameterManager.class
+com\mycompany\nehoda\HeaderRowManager.class
+com\mycompany\nehoda\DatabaseManagers\DatabaseManager.class
