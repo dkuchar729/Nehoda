@@ -6,10 +6,8 @@ package com.mycompany.nehoda.CsvManagers;
 
 import com.microsoft.sqlserver.jdbc.SQLServerException;
 import com.mycompany.nehoda.AccidentRecord;
-import static com.mycompany.nehoda.AccidentRecord.headerRow;
 import com.mycompany.nehoda.AccidentRecordsCreator;
 import com.mycompany.nehoda.DatabaseManagers.AccidentDatabaseManager;
-import com.mycompany.nehoda.DatabaseManagers.DatabaseManager;
 import com.mycompany.nehoda.ParameterManager;
 import com.mycompany.nehoda.AccidentRecordManager;
 import com.mycompany.nehoda.TimeManager;
@@ -106,6 +104,7 @@ public class CsvManager {
             updateColumn(row, pm.getIndexes().getVisibility(), pm.getVisibilityValue(getData(row, pm.getIndexes().getVisibility())));
             updateColumn(row, pm.getIndexes().getRoadLine(), pm.getRoadLineValue(getData(row, pm.getIndexes().getRoadLine())));
             updateColumn(row, pm.getIndexes().getRoadType(), pm.getRoadTypeValue(getData(row, pm.getIndexes().getRoadType())));
+
             updateColumn(row, pm.getIndexes().getDirection(), pm.getDirectionValue(getData(row, pm.getIndexes().getDirection())));
             updateColumn(row, pm.getIndexes().getRoadState(), pm.getRoadState(getData(row, pm.getIndexes().getRoadState())));
             updateColumn(row, pm.getIndexes().getVision(), pm.getVision(getData(row, pm.getIndexes().getVision())));
@@ -183,7 +182,15 @@ public class CsvManager {
 
         writeData();
     }
+public void AddSpecificColumn() throws IOException, CsvException {
+    loadCsvData();
+    updateHeader();
 
+    for (int row = 1; row < csvData.size(); row++) {
+       addValue(row, pm.getDirectionTypeValue(getData(row,pm.getIndexes().getDirection())));
+    }
+    writeData();
+}
     public LocalDate getDate(String date) {
         return LocalDate.parse(date, df);
     }
@@ -519,8 +526,12 @@ public class CsvManager {
 
         for (int i = 0; i < header.length; i++) {
             if (!pm.setHeaderIndex(i, header[i])) {
+
+               // System.out.println(i+" "+pm.setHeaderIndex(i, header[i]));
+                System.out.println(getData(0,i));
                 columnsToRemove.add(i);
             }
+
             updateColumn(0, i, pm.getHeaderValue(header[i]));
         }
 
@@ -1221,6 +1232,20 @@ public class CsvManager {
         csvData.addAll(dm.loadFromDatabase(headerRow, required));
         dm.close();
         writeData();
+
+    }
+
+    public void updateDatabaseColumnByID(String columnName) throws SQLException, ClassNotFoundException, IOException, CsvException {
+        dm.open();
+        loadCsvData();
+        updateHeader();
+
+       for(int row=1;row<csvData.size();row++)
+       {
+        dm.updateByID(getData(row,pm.getIndexes().getId()),columnName,getData(row,pm.getIndexes().getSpecificDirections()));
+
+       }
+        dm.close();
 
     }
 

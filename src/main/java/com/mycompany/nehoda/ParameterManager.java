@@ -37,6 +37,7 @@ public final class ParameterManager {
     private Map<Integer, String> obstacleCrashType;
     private Map<Integer, String> roadSurfaceType;
     private Map<String, String> headerValues;
+    private Map<Integer, String> specificDirections;
 
     //cars
     private Map<Integer, String> vehicleTypes;
@@ -68,6 +69,7 @@ public final class ParameterManager {
 
         vehicleCrashType = new HashMap<>();
         obstacleCrashType = new HashMap<>();
+        specificDirections = new HashMap<>();
 
         setMapValue(headerValues, "p1", "id");
         setMapValue(headerValues, "p2a", "datum");
@@ -85,7 +87,7 @@ public final class ParameterManager {
         setMapValue(headerValues, "p13a", "usmrcenoOsob");
         setMapValue(headerValues, "p13b", "tezceZranenoOsob");
         setMapValue(headerValues, "p13c", "lehceZranenoOsob");
-                setMapValue(headerValues, "p14", "celkovaCastka");
+        setMapValue(headerValues, "p14", "celkovaCastka");
         setMapValue(headerValues, "p15", "druhPovrchu");
         setMapValue(headerValues, "p16", "povrchVozovky");
         setMapValue(headerValues, "p17", "stavVozovky");
@@ -184,6 +186,18 @@ public final class ParameterManager {
         setMapValues(direction, new Integer[]{4, 5, 6}, "krizovatka");
         setMapValue(direction, 7, "kruhovyObjezd");
 
+
+        specificDirections =Map.of(
+                1,"primyUsek",
+                2,"primyUsekPoZatacce",
+                3,"zatacka",
+                4,"krizovatkaPrusecnaCtyrramenna",
+                5,"krizovatkaStykovaTriramenna",
+                6,"krizovatkaPetiViceRamenna",
+                7,"kruhovyObjezd"
+
+        );
+
         setMapValue(town, 1, "obec");
         setMapValue(town, 2, "mimoObec");
 
@@ -281,121 +295,121 @@ public final class ParameterManager {
     }
 
     public boolean setHeaderIndex(int index, String key) {
-
+        System.out.println("index klic "+index + " "+key);
         //String headerValue = headerValues.get(key);
         switch (key) {
-            case "p1" ->
+            case "p1","id" ->
 
                 headerIndexes.setId(index);
-            case "p2a" ->
+            case "p2a","datum" ->
                 headerIndexes.setDate(index);
 
-            case "p2b" ->
+            case "p2b","hodina" ->
                 headerIndexes.setTime(index);
 
-            case "p4a" ->
+            case "p4a","kraj" ->
                 headerIndexes.setRegion(index);
 
-            case "p4b" ->
+            case "p4b","okres" ->
                 headerIndexes.setDistrict(index);
 
-            case "p5a" ->
+            case "p5a","umisteniObec" ->
                 headerIndexes.setTown(index);
 
-            case "p6" ->
+            case "p6","druhNehody" ->
                 headerIndexes.setAccidentType(index);
 
-            case "p7" ->
+            case "p7","typSrazkyVozidlo" ->
                 headerIndexes.setVehicleCrashType(index);
 
-            case "p8" ->
+            case "p8","typSrazkyPrekazka" ->
                 headerIndexes.setObstacleCrashType(index);
 
-            case "p10" ->
+            case "p10","zavineniNehody" ->
                 headerIndexes.setGuilty(index);
 
-            case "p11" ->
+            case "p11","alkohol" ->
                 headerIndexes.setAlcohol(index);
 
-            case "p12" ->
+            case "p12","pricinaNehody" ->
                 headerIndexes.setCause(index);
 
-            case "p15" ->
+            case "p15","druhPovrchu" ->
                 headerIndexes.setRoadSurfaceType(index);
 
-            case "p16" ->
+            case "p16","povrchVozovky" ->
                 headerIndexes.setSurface(index);
 
-            case "p17" ->
+            case "p17","stavVozovky" ->
                 headerIndexes.setRoadState(index);
 
-            case "p18" ->
+            case "p18","povetrnostniPodminky" ->
                 headerIndexes.setWeatherConditions(index);
 
-            case "p19" ->
+            case "p19","viditelnost" ->
                 headerIndexes.setVisibility(index);
 
-            case "p20" ->
+            case "p20","rozhled" ->
                 headerIndexes.setVision(index);
-            case "p21" ->
+            case "p21","deleniKomunikace" ->
                 headerIndexes.setRoadLine(index);
-            case "p22" ->
+            case "p22","situovaniNehody" ->
                 headerIndexes.setRoadArea(index);
 
-            case "p27" ->
+            case "p27","specifickeMisto" ->
                 headerIndexes.setSpecificPlace(index);
 
-            case "p28" ->
+            case "p28","smerovyPomer" ->
                 headerIndexes.setDirection(index);
-            case "34" ->
+            case "p34","pocetVozidel" ->
                 headerIndexes.setVehicleNumber(index);
 
-            case "p36" ->
+            case "p36","druhKomunikace" ->
                 headerIndexes.setRoadType(index);
 
-            case "p37" ->
+            case "p37","cisloKomunikace" ->
                 headerIndexes.setRoadName(index);
 
-            case "p44" ->
+            case "p44","typVozidla" ->
                 headerIndexes.setVehicleType(index);
 
-            case "h" ->
+            case "h","obec" ->
                 headerIndexes.setT(index);
 
-            case "d" ->
+            case "d","souradniceX" ->
                 headerIndexes.setcX(index);
 
-            case "e" ->
+            case "e","souradniceY" ->
                 headerIndexes.setcY(index);
 
             case "zavaznostNehody" ->
                 headerIndexes.setAccidentSeverity(index);
 
-            case "p34" ->
-                headerIndexes.setAccidentSeverity(index);
-
-            case "p9" -> {
+            case "p9","charakterNehody" -> {
                 headerIndexes.setNatureOfAccident(index);
                 return false;
             }
 
-            case "p13a" -> {
+            case "p13a","usmrcenoOsob" -> {
                 headerIndexes.setFatalAccident(index);
-              
+
             }
 
-            case "p13b" -> {
+            case "p13b","tezceZranenoOsob" -> {
                 headerIndexes.setSeriousAccident(index);
-                
+
             }
-            case "p13c" -> {
+            case "p13c","lehceZranenoOsob" -> {
                 headerIndexes.setMinorAccident(index);
-               
+
             }
-            
-              case "p14" -> {
+
+            case "p14","celkovaCastka" -> {
                 headerIndexes.setTotalAmount(index);
-               
+
+            }
+            case "specifikaceSmerovyPomer"->{
+                headerIndexes.setSpecificDirections(index);
             }
 
             default -> {
@@ -493,26 +507,31 @@ public final class ParameterManager {
         return getValue(direction, key);
     }
 
+    public String getDirectionTypeValue(String key) {
+        return getValue(specificDirections, key);
+    }
+
     public String getVehicleType(String key) {
         return getValue(vehicleTypes, key);
     }
+
 
     public String getAccidentSeverity(String key) {
 
         return getValue(getAccidentSeverity(), key);
     }
-    
-     public String getVehicleCrashType(String key) {
+
+    public String getVehicleCrashType(String key) {
 
         return getValue(vehicleCrashType, key);
     }
-     
-       public String getObstacleCrashType(String key) {
+
+    public String getObstacleCrashType(String key) {
 
         return getValue(obstacleCrashType, key);
     }
-       
-         public String getRoadSurfaceType(String key) {
+
+    public String getRoadSurfaceType(String key) {
 
         return getValue(roadSurfaceType, key);
     }

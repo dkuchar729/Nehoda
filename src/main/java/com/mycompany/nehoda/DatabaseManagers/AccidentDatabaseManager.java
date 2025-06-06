@@ -587,7 +587,16 @@ public class AccidentDatabaseManager extends DatabaseManager {
         }
         rs.close();
     }
+public void updateByID(String ID,String columnName,String value) throws SQLException {
+    ResultSet rs=getById(Long.parseLong(ID));
+    if(rs.next()) {
+        rs.updateString(columnName, value);
+        rs.updateRow();
+    }
+    rs.close();
 
+
+}
     public void addValueToDatabase(String value, String headerColumnName, ResultSet rs) throws SQLException {
 
         if (value != null && value.length() != 0) {

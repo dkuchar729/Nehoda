@@ -19,7 +19,7 @@ import java.sql.Statement;
  */
 public class DatabaseManager {
 
-    private String connectionString = "jdbc:sqlserver://P-PC;"
+    private String connectionString = "jdbc:sqlserver://localhost;"
             + "database=nehody;"
             + "integratedSecurity=true;"
             + "encrypt=true;"
