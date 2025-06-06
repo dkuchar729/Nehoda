@@ -29,6 +29,7 @@ public class Indexes {
     private int roadArea;
     private int specificPlace;
     private int direction;
+    private int specificDirections;
     private int roadType;
     private int roadName;
     private int roadDensity;
@@ -44,8 +45,15 @@ public class Indexes {
     private int vehicleCrashType;
     private int obstacleCrashType;
     private int roadSurfaceType;
-      private int vehicleNumber;
- private int totalAmount;
+    private int vehicleNumber;
+    private int totalAmount;
+    private int result;
+
+
+    public int getSpecificDirections() {
+        return specificDirections;
+    }
+
     public Indexes() {
         id = -1;
         date = -1;
@@ -81,8 +89,10 @@ public class Indexes {
         vehicleCrashType = -1;
         obstacleCrashType = -1;
         roadSurfaceType = -1;
-        vehicleNumber=-1;
-        totalAmount=-1;
+        vehicleNumber = -1;
+        totalAmount = -1;
+        specificDirections = -1;
+        result = -1;
     }
 
     /**
@@ -125,6 +135,10 @@ public class Indexes {
      */
     public void setTime(int time) {
         this.time = time;
+    }
+
+    public void setSpecificDirections(int specificDirections) {
+        this.specificDirections = specificDirections;
     }
 
     /**
@@ -575,6 +589,20 @@ public class Indexes {
      */
     public void setTotalAmount(int totalAmount) {
         this.totalAmount = totalAmount;
+    }
+
+    /**
+     * @return the result
+     */
+    public int getResult() {
+        return result;
+    }
+
+    /**
+     * @param result the result to set
+     */
+    public void setResult(int result) {
+        this.result = result;
     }
 
 }

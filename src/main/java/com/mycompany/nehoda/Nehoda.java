@@ -11,6 +11,8 @@ import java.io.File;
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.Arrays;
+
+import com.mycompany.nehoda.DatabaseManagers.DatabaseManager;
 import org.apache.commons.lang3.ArrayUtils;
 
 /**
@@ -23,8 +25,12 @@ public class Nehoda {
         try {
 
 //data/predpovedNehody/nehodyVsechny.csv
-            CsvManager cm = new CsvManager(new File("nehody20Original.csv"), ';');//data/pocetNehodDen/nehody22Upravenee.csv
-            
+           CsvManager cm = new CsvManager(new File("nehody23Original.csv"), ';');
+           cm.updateDatabaseColumnByID("specifikaceSmerovyPomer");
+          //cm.AddSpecificColumn();
+            /*DatabaseManager db=new DatabaseManager();
+
+            db.open();*/
             //predpovedNehody
             //cm.addAltitude();
             //cm.createDupliciteRecords(20);
@@ -41,7 +47,7 @@ public class Nehoda {
             //cm.createDupliciteRecords(10);
 //cm.createAccidentRecordsAltitude(70);
             
-            cm.loadAllToDatabase();
+            //cm.loadAllToDatabase();
             //obecne
             //cm.removeMissingValues(22);
             //cm.updateTime(2);
