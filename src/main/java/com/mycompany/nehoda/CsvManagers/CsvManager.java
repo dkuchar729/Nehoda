@@ -526,9 +526,9 @@ public void AddSpecificColumn() throws IOException, CsvException {
 
         for (int i = 0; i < header.length; i++) {
             if (!pm.setHeaderIndex(i, header[i])) {
-
+                //System.out.println(header[i]);
                // System.out.println(i+" "+pm.setHeaderIndex(i, header[i]));
-                System.out.println(getData(0,i));
+                //System.out.println(getData(0,i));
                 columnsToRemove.add(i);
             }
 
@@ -1239,7 +1239,7 @@ public void AddSpecificColumn() throws IOException, CsvException {
         dm.open();
         loadCsvData();
         updateHeader();
-
+System.out.println(pm.getIndexes().getId());
        for(int row=1;row<csvData.size();row++)
        {
         dm.updateByID(getData(row,pm.getIndexes().getId()),columnName,getData(row,pm.getIndexes().getSpecificDirections()));

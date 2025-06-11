@@ -3,6 +3,7 @@
  */
 package com.mycompany.nehoda;
 
+import com.mycompany.nehoda.ColumnsIndexing.AvailableColumns;
 import com.mycompany.nehoda.CsvManagers.CsvManager;
 import com.mycompany.nehoda.CsvManagers.*;
 import com.mycompany.nehoda.DatabaseManagers.AccidentDatabaseManager;
@@ -23,10 +24,10 @@ public class Nehoda {
 
     public static void main(String[] args) {
         try {
-
+            //System.out.println(AvailableColumns.ID.getColumnNames()[0]);
 //data/predpovedNehody/nehodyVsechny.csv
-           CsvManager cm = new CsvManager(new File("nehody23Original.csv"), ';');
-           cm.updateDatabaseColumnByID("specifikaceSmerovyPomer");
+          // CsvManager cm = new CsvManager(new File("nehody23Original.csv"), ';');
+         //  cm.updateDatabaseColumnByID("specifikaceSmerovyPomer");
           //cm.AddSpecificColumn();
             /*DatabaseManager db=new DatabaseManager();
 

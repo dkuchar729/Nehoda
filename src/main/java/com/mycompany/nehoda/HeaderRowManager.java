@@ -10,10 +10,10 @@ package com.mycompany.nehoda;
  */
 public class HeaderRowManager {
 
-    private Indexes columnIndexes;
+    private ColumnsIndexesManager columnColumnsIndexesManager;
 
     public HeaderRowManager() {
-        columnIndexes = new Indexes();
+        columnColumnsIndexesManager = new ColumnsIndexesManager();
     }
 
     public void setHeaderColumnsIndexes(String[] headerRow) {
@@ -29,126 +29,126 @@ public class HeaderRowManager {
         switch (columnName) {
             case "p1", "id" ->
 
-                columnIndexes.setId(index);
+                columnColumnsIndexesManager.setId(index);
 
             case "p2a", "datum" ->
-                columnIndexes.setDate(index);
+                columnColumnsIndexesManager.setDate(index);
 
             case "p2b", "hodina" ->
-                columnIndexes.setTime(index);
+                columnColumnsIndexesManager.setTime(index);
 
             case "p4a", "kraj" ->
-                columnIndexes.setRegion(index);
+                columnColumnsIndexesManager.setRegion(index);
 
             case "p4b", "okres" ->
-                columnIndexes.setDistrict(index);
+                columnColumnsIndexesManager.setDistrict(index);
 
             case "p5a", "umisteniObec" ->
-                columnIndexes.setTown(index);
+                columnColumnsIndexesManager.setTown(index);
 
             case "p6", "druhNehody" ->
-                columnIndexes.setAccidentType(index);
+                columnColumnsIndexesManager.setAccidentType(index);
 
             case "p7", "typSrazkyVozidlo" ->
-                columnIndexes.setVehicleCrashType(index);
+                columnColumnsIndexesManager.setVehicleCrashType(index);
 
             case "p8", "typSrazkyPrekazka" ->
-                columnIndexes.setObstacleCrashType(index);
+                columnColumnsIndexesManager.setObstacleCrashType(index);
 
             case "p10", "zavineniNehody" ->
-                columnIndexes.setGuilty(index);
+                columnColumnsIndexesManager.setGuilty(index);
 
             case "p11", "alkohol" ->
-                columnIndexes.setAlcohol(index);
+                columnColumnsIndexesManager.setAlcohol(index);
 
             case "p12", "pricinaNehody" ->
-                columnIndexes.setCause(index);
+                columnColumnsIndexesManager.setCause(index);
 
             case "p15", "druhPovrchu" ->
-                columnIndexes.setRoadSurfaceType(index);
+                columnColumnsIndexesManager.setRoadSurfaceType(index);
 
             case "p16", "povrchVozovky" ->
-                columnIndexes.setSurface(index);
+                columnColumnsIndexesManager.setSurface(index);
 
             case "p17", "stavVozovky" ->
-                columnIndexes.setRoadState(index);
+                columnColumnsIndexesManager.setRoadState(index);
 
             case "p18", "povetrnostniPodminky" ->
-                columnIndexes.setWeatherConditions(index);
+                columnColumnsIndexesManager.setWeatherConditions(index);
 
             case "p19", "viditelnost" ->
-                columnIndexes.setVisibility(index);
+                columnColumnsIndexesManager.setVisibility(index);
 
             case "p20", "rozhled" ->
-                columnIndexes.setVision(index);
+                columnColumnsIndexesManager.setVision(index);
 
             case "p21", "deleniKomunikace" ->
-                columnIndexes.setRoadLine(index);
+                columnColumnsIndexesManager.setRoadLine(index);
 
             case "p22", "situovaniNehody" ->
-                columnIndexes.setRoadArea(index);
+                columnColumnsIndexesManager.setRoadArea(index);
 
             case "p27", "specifickeMisto" ->
-                columnIndexes.setSpecificPlace(index);
+                columnColumnsIndexesManager.setSpecificPlace(index);
 
             case "p28", "smerovyPomer" ->
-                columnIndexes.setDirection(index);
+                columnColumnsIndexesManager.setDirection(index);
 
             case "p34", "pocetVozidel" ->
-                columnIndexes.setVehicleNumber(index);
+                columnColumnsIndexesManager.setVehicleNumber(index);
 
             case "p36", "druhKomunikace" ->
-                columnIndexes.setRoadType(index);
+                columnColumnsIndexesManager.setRoadType(index);
 
             case "p37", "cisloKomunikace" ->
-                columnIndexes.setRoadName(index);
+                columnColumnsIndexesManager.setRoadName(index);
 
             case "p44", "typVozidla" ->
-                columnIndexes.setVehicleType(index);
+                columnColumnsIndexesManager.setVehicleType(index);
 
             case "h", "obec" ->
-                columnIndexes.setT(index);
+                columnColumnsIndexesManager.setT(index);
 
             case "d", "souradniceX" ->
-                columnIndexes.setcX(index);
+                columnColumnsIndexesManager.setcX(index);
 
             case "e", "souradniceY" ->
-                columnIndexes.setcY(index);
+                columnColumnsIndexesManager.setcY(index);
 
             case "zavaznostNehody" ->
-                columnIndexes.setAccidentSeverity(index);
+                columnColumnsIndexesManager.setAccidentSeverity(index);
 
 
             case "p9", "charakterNehody" -> {
-                columnIndexes.setNatureOfAccident(index);
+                columnColumnsIndexesManager.setNatureOfAccident(index);
 
                 return false;
             }
 
             case "p13a", "usmrcenoOsob" -> {
-                columnIndexes.setFatalAccident(index);
+                columnColumnsIndexesManager.setFatalAccident(index);
 
             }
 
             case "p13b", "tezceZranenoOsob" -> {
-                columnIndexes.setSeriousAccident(index);
+                columnColumnsIndexesManager.setSeriousAccident(index);
 
             }
             case "p13c", "lehceZranenoOsob" -> {
-                columnIndexes.setMinorAccident(index);
+                columnColumnsIndexesManager.setMinorAccident(index);
 
             }
 
             case "p14", "celkovaCastka" -> {
-                columnIndexes.setTotalAmount(index);
+                columnColumnsIndexesManager.setTotalAmount(index);
             }
             
             case "hustotaDopravy"->{
-                columnIndexes.setRoadDensity(index);
+                columnColumnsIndexesManager.setRoadDensity(index);
             }
             
             case "vysledek"->{
-                columnIndexes.setResult(index);
+                columnColumnsIndexesManager.setResult(index);
             }
 
             default -> {
@@ -159,7 +159,7 @@ public class HeaderRowManager {
         return true;
     }
 
-    public Indexes getColumnIndexes() {
-        return columnIndexes;
+    public ColumnsIndexesManager getColumnIndexes() {
+        return columnColumnsIndexesManager;
     }
 }

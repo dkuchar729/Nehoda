@@ -12,7 +12,8 @@ public class Indexes {
 
     private int id;
     private int date;
-    private int time;
+    private int day;
+    private int time;    
     private int region;
     private int district;
     private int town;
@@ -29,7 +30,6 @@ public class Indexes {
     private int roadArea;
     private int specificPlace;
     private int direction;
-    private int specificDirections;
     private int roadType;
     private int roadName;
     private int roadDensity;
@@ -48,15 +48,12 @@ public class Indexes {
     private int vehicleNumber;
     private int totalAmount;
     private int result;
-
-
-    public int getSpecificDirections() {
-        return specificDirections;
-    }
+    private int visibilityDuringDay;
 
     public Indexes() {
         id = -1;
         date = -1;
+        day=-1;
         time = -1;
         region = -1;
         district = -1;
@@ -91,7 +88,7 @@ public class Indexes {
         roadSurfaceType = -1;
         vehicleNumber = -1;
         totalAmount = -1;
-        specificDirections = -1;
+        visibilityDuringDay=-1;
         result = -1;
     }
 
@@ -135,10 +132,6 @@ public class Indexes {
      */
     public void setTime(int time) {
         this.time = time;
-    }
-
-    public void setSpecificDirections(int specificDirections) {
-        this.specificDirections = specificDirections;
     }
 
     /**
@@ -603,6 +596,34 @@ public class Indexes {
      */
     public void setResult(int result) {
         this.result = result;
+    }
+
+    /**
+     * @return the day
+     */
+    public int getDay() {
+        return day;
+    }
+
+    /**
+     * @param day the day to set
+     */
+    public void setDay(int day) {
+        this.day = day;
+    }
+
+    /**
+     * @return the visibilityDuringDay
+     */
+    public int getVisibilityDuringDay() {
+        return visibilityDuringDay;
+    }
+
+    /**
+     * @param visibilityDuringDay the visibilityDuringDay to set
+     */
+    public void setVisibilityDuringDay(int visibilityDuringDay) {
+        this.visibilityDuringDay = visibilityDuringDay;
     }
 
 }
