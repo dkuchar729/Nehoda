@@ -4,6 +4,9 @@
  */
 package com.mycompany.nehoda;
 
+import com.mycompany.nehoda.ColumnsIndexing.AvailableColumns;
+
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -416,6 +419,26 @@ public final class ParameterManager {
 
         }
         return true;
+    }
+    public void checkHeaderTest(int index,String columnName)
+    {
+       for(AvailableColumns av:AvailableColumns.values())
+       {
+            if(Arrays.stream(av.getColumnNames()).anyMatch(columnName::equals) ){
+                ColumnIndexesRecord.addIndex(av,index);
+       }
+       }
+    }
+
+    public String mapValue(int index,int columnValue)
+    {
+        AvailableColumns av=ColumnIndexesRecord.getKey(index);
+
+        if(av!=null)
+        {
+            return av.getMapppedSpecificValue(columnValue);
+        }
+        return "null";
     }
 
     public String getHeaderValue(String key) {

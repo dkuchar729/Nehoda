@@ -3,6 +3,7 @@
  */
 package com.mycompany.nehoda;
 
+import ColumnValuesMappers.SpecificMapper;
 import com.mycompany.nehoda.ColumnsIndexing.AvailableColumns;
 import com.mycompany.nehoda.CsvManagers.CsvManager;
 import com.mycompany.nehoda.CsvManagers.*;
@@ -12,6 +13,8 @@ import java.io.File;
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 import com.mycompany.nehoda.DatabaseManagers.DatabaseManager;
 import org.apache.commons.lang3.ArrayUtils;
@@ -24,9 +27,16 @@ public class Nehoda {
 
     public static void main(String[] args) {
         try {
+            ParameterManager pm=new ParameterManager();
+
+
             //System.out.println(AvailableColumns.ID.getColumnNames()[0]);
 //data/predpovedNehody/nehodyVsechny.csv
-          // CsvManager cm = new CsvManager(new File("nehody23Original.csv"), ';');
+          CsvManager cm = new CsvManager(new File("nehody23Original.csv"), ';');
+
+          cm.checkHeaderRTest();
+
+
          //  cm.updateDatabaseColumnByID("specifikaceSmerovyPomer");
           //cm.AddSpecificColumn();
             /*DatabaseManager db=new DatabaseManager();
@@ -76,6 +86,10 @@ public class Nehoda {
             //CoordinatesCsvManager csm=new CoordinatesCsvManager(new File("souradnice.csv"), ';');
             // csm.addCoordinatesDataToDatabase();
             //cm.sortByCoordinates(755830,1166150,500);
+
+
+
+
         } catch (Exception e) {
             e.printStackTrace();
         }

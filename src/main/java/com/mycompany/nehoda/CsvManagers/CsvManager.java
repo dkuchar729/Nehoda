@@ -5,13 +5,9 @@
 package com.mycompany.nehoda.CsvManagers;
 
 import com.microsoft.sqlserver.jdbc.SQLServerException;
-import com.mycompany.nehoda.AccidentRecord;
-import com.mycompany.nehoda.AccidentRecordsCreator;
+import com.mycompany.nehoda.*;
+import com.mycompany.nehoda.ColumnsIndexing.AvailableColumns;
 import com.mycompany.nehoda.DatabaseManagers.AccidentDatabaseManager;
-import com.mycompany.nehoda.ParameterManager;
-import com.mycompany.nehoda.AccidentRecordManager;
-import com.mycompany.nehoda.TimeManager;
-import com.mycompany.nehoda.WeatherInfo;
 import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
 import com.opencsv.exceptions.CsvException;
@@ -55,6 +51,7 @@ public class CsvManager {
     protected List<Integer> rowsToRemove;
 
     private String[] lastWeatherRow;
+
 
     public CsvManager(File csvFile, char separator) throws FileNotFoundException, IOException {
         this.csvFile = csvFile;
@@ -1340,5 +1337,34 @@ System.out.println(pm.getIndexes().getId());
         }
         dm.close();
 
+    }
+
+    public void checkHeaderRTest() throws IOException, CsvException {
+        loadCsvData();
+        for(int column=0;column<csvData.get(0).length;column++)
+        {
+            pm.checkHeaderTest(column,csvData.get(0)[column]);
+        }
+
+        int index=ColumnIndexesRecord.getIndex(AvailableColumns.PRICINA_NEHODY);
+
+        for(int row=1;row<csvData.size();row++)
+        {
+            addValue(row,mapValue(index,getData(row,index)));
+        }
+
+        //addValue(2,mapValue(index,getData(2,index)));
+
+        writeData();
+        //System.out.println(ColumnIndexesRecord.getIndex(AvailableColumns.PRICINA_NEHODY));
+
+    }
+
+
+
+    public String mapValue(int columnIndex,String value) throws IOException, CsvException {
+
+
+        return pm.mapValue(columnIndex,Integer.parseInt(value));
     }
 }
