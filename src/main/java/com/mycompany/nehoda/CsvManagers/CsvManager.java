@@ -20,13 +20,10 @@ import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDate;
+import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.sql.Date;
 
 /**
  * @author dorgu
@@ -179,15 +176,17 @@ public class CsvManager {
 
         writeData();
     }
-public void AddSpecificColumn() throws IOException, CsvException {
-    loadCsvData();
-    updateHeader();
 
-    for (int row = 1; row < csvData.size(); row++) {
-       addValue(row, pm.getDirectionTypeValue(getData(row,pm.getIndexes().getDirection())));
+    public void AddSpecificColumn() throws IOException, CsvException {
+        loadCsvData();
+        updateHeader();
+
+        for (int row = 1; row < csvData.size(); row++) {
+            addValue(row, pm.getDirectionTypeValue(getData(row, pm.getIndexes().getDirection())));
+        }
+        writeData();
     }
-    writeData();
-}
+
     public LocalDate getDate(String date) {
         return LocalDate.parse(date, df);
     }
@@ -441,7 +440,8 @@ public void AddSpecificColumn() throws IOException, CsvException {
         vysledek.writeData();
 
     }
-       public void createAccidentRecordsAltitude( int altitudeRange) throws IOException, CsvException, SQLException, ClassNotFoundException {
+
+    public void createAccidentRecordsAltitude(int altitudeRange) throws IOException, CsvException, SQLException, ClassNotFoundException {
 
         CsvManager vysledek = new CsvManager(new File("data/predpovedNehody/vysledekNadmorska.csv"), ';');
         List<String[]> allRecords = new LinkedList<>();
@@ -524,7 +524,7 @@ public void AddSpecificColumn() throws IOException, CsvException {
         for (int i = 0; i < header.length; i++) {
             if (!pm.setHeaderIndex(i, header[i])) {
                 //System.out.println(header[i]);
-               // System.out.println(i+" "+pm.setHeaderIndex(i, header[i]));
+                // System.out.println(i+" "+pm.setHeaderIndex(i, header[i]));
                 //System.out.println(getData(0,i));
                 columnsToRemove.add(i);
             }
@@ -927,7 +927,7 @@ public void AddSpecificColumn() throws IOException, CsvException {
         for (int i = 0; i < rows.size(); i++) {
 
             if (!densityMap.containsKey(i)) {
-             
+
                 densityMap.put(i, Double.valueOf(rows.get(i)[10]));
             }
             startIndex++;
@@ -1236,14 +1236,14 @@ public void AddSpecificColumn() throws IOException, CsvException {
         dm.open();
         loadCsvData();
         updateHeader();
-System.out.println(pm.getIndexes().getId());
-       for(int row=1;row<csvData.size();row++)
-       {
-        dm.updateByID(getData(row,pm.getIndexes().getId()),columnName,getData(row,pm.getIndexes().getSpecificDirections()));
+        System.out.println(pm.getIndexes().getId());
+        for (int row = 1; row < csvData.size(); row++) {
+            dm.updateByID(getData(row, pm.getIndexes().getId()), columnName, getData(row, pm.getIndexes().getSpecificCause()));
 
-       }
+        }
         dm.close();
 
+        //System.out.println(pm.getIndexes().getSpecificCause());
     }
 
     public void vypiss() throws SQLException, ClassNotFoundException {
@@ -1341,16 +1341,14 @@ System.out.println(pm.getIndexes().getId());
 
     public void checkHeaderRTest() throws IOException, CsvException {
         loadCsvData();
-        for(int column=0;column<csvData.get(0).length;column++)
-        {
-            pm.checkHeaderTest(column,csvData.get(0)[column]);
+        for (int column = 0; column < csvData.get(0).length; column++) {
+            pm.checkHeaderTest(column, csvData.get(0)[column]);
         }
 
-        int index=ColumnIndexesRecord.getIndex(AvailableColumns.PRICINA_NEHODY);
+        int index = ColumnIndexesRecord.getIndex(AvailableColumns.PRICINA_NEHODY);
 
-        for(int row=1;row<csvData.size();row++)
-        {
-            addValue(row,mapValue(index,getData(row,index)));
+        for (int row = 1; row < csvData.size(); row++) {
+            addValue(row, mapValue(index, getData(row, index)));
         }
 
         //addValue(2,mapValue(index,getData(2,index)));
@@ -1361,10 +1359,235 @@ System.out.println(pm.getIndexes().getId());
     }
 
 
+    public String mapValue(int columnIndex, String value) throws IOException, CsvException {
 
-    public String mapValue(int columnIndex,String value) throws IOException, CsvException {
 
-
-        return pm.mapValue(columnIndex,Integer.parseInt(value));
+        return pm.mapValue(columnIndex, Integer.parseInt(value));
     }
+
+    public void addStations() throws IOException, CsvException, SQLException, ClassNotFoundException {
+        loadCsvData();
+        dm.open();
+        for (int row = 1; row < csvData.size(); row++) {
+
+            dm.insert(csvData.get(row)[0].toLowerCase().trim());
+        }
+
+        dm.close();
+    }
+
+    public Map<String, Integer> getM() {
+        Map<String, Integer> m = new HashMap<>();
+        m.put("české budějovice - rožnov", 1);
+        m.put("bechyně", 2);
+        m.put("blatná", 3);
+        m.put("borkovice", 4);
+        m.put("borová lada", 5);
+        m.put("bučina, u kvildy", 6);
+        m.put("byňov", 7);
+        m.put("černá v pošumaví", 8);
+        m.put("český krumlov", 9);
+        m.put("hlasivo", 10);
+        m.put("hliniště", 11);
+        m.put("horská kvilda", 12);
+        m.put("husinec", 13);
+        m.put("chelčice", 14);
+        m.put("chlum u třeboně", 15);
+        m.put("churáňov", 16);
+        m.put("jindřichův hradec", 17);
+        m.put("kašperské hory", 18);
+        m.put("kocelovice", 19);
+        m.put("křemže", 20);
+        m.put("ktiš", 21);
+        m.put("kvilda", 22);
+        m.put("nadějkov", 23);
+        m.put("plechý", 24);
+        m.put("rokytská slať", 25);
+        m.put("rudolfov", 26);
+        m.put("sedlice", 27);
+        m.put("strakonice", 28);
+        m.put("tábor", 29);
+        m.put("temelín", 30);
+        m.put("třeboň", 31);
+        m.put("vimperk", 32);
+        m.put("volary", 33);
+        m.put("vráž", 34);
+        m.put("vyšší brod", 35);
+        m.put("frymburk", 37);
+        m.put("chroboly", 38);
+        m.put("kubova huť", 39);
+        m.put("milevsko", 40);
+        m.put("mirovice", 41);
+        m.put("trhové sviny", 42);
+        m.put("pikov", 43);
+        m.put("bavorov", 45);
+        m.put("benešov nad černou", 46);
+        m.put("bernartice", 47);
+        m.put("besednice", 48);
+        m.put("brloh", 49);
+        m.put("český rudolec", 50);
+        m.put("dačice", 51);
+        m.put("dolní dvořiště", 52);
+        m.put("hluboká nad vltavou", 53);
+        m.put("hranice", 54);
+        m.put("chvalšiny", 55);
+        m.put("chýnov", 56);
+        m.put("jelení, nová pec", 57);
+        m.put("jistebnice", 58);
+        m.put("kamenice nad lipou, vodná", 59);
+        m.put("kardašova řečice", 60);
+        m.put("katovice", 61);
+        m.put("kestřany", 62);
+        m.put("kovářov, vepice", 63);
+        m.put("krsice", 64);
+        m.put("ledenice", 65);
+        m.put("lipnice", 66);
+        m.put("lipno", 67);
+        m.put("lodhéřov", 68);
+        m.put("malonty", 69);
+        m.put("mladá vožice", 70);
+        m.put("němčice", 71);
+        m.put("netřebice", 72);
+        m.put("nová bystřice", 73);
+        m.put("nová včelnice", 74);
+        m.put("olší", 75);
+        m.put("orlík nad vltavou", 76);
+        m.put("pasečná, přední výtoň", 77);
+        m.put("paseky", 78);
+        m.put("planá nad lužnicí", 79);
+        m.put("pohorská ves", 80);
+        m.put("prachatice", 81);
+        m.put("přídolí", 82);
+        m.put("rožmitál na šumavě", 83);
+        m.put("římov", 84);
+        m.put("slavkov", 85);
+        m.put("slavonice, stálkov", 86);
+        m.put("soběnov", 87);
+        m.put("staré hutě, hojná voda", 88);
+        m.put("stožec", 89);
+        m.put("stráž nad nežárkou", 91);
+        m.put("strážný", 92);
+        m.put("strmilov", 93);
+        m.put("suchdol nad lužnicí", 94);
+        m.put("ševětín", 95);
+        m.put("tučapy", 96);
+        m.put("vacov, peckov", 97);
+        m.put("volyně, nihošovice", 98);
+        m.put("zálezly", 99);
+        m.put("závišín", 100);
+        m.put("zbytiny", 101);
+        m.put("kunžak", 102);
+        m.put("nicov", 103);
+        m.put("řasnice", 104);
+        m.put("opařany - olší", 105);
+        m.put("sedliště - čejetice", 107);
+        m.put("janova ves", 109);
+        m.put("staré hobzí", 111);
+        m.put("kleť", 1111);
+        m.put("písek", 1112);
+        m.put("kamenný újezd", 1113);
+        m.put("křenovice", 1114);
+        m.put("veselí nad lužnicí", 1115);
+        m.put("čestice - na kobylce", 1116);
+        m.put("přední výtoň", 1117);
+
+        return m;
+    }
+
+    public void udpateWeatherInput() throws IOException, CsvException {
+
+Map<String,Integer> m=getM();
+
+        loadCsvData();
+        rowsToRemove = new LinkedList<>();
+        String asd = "";
+        String date = "";
+        for (int row = 0; row < csvData.size(); row++) {
+
+            if (!date.equals(getData(row, 1))) {
+                date = getData(row, 1);
+
+                updateColumn(row, 1, "'" + date + "'");
+            } else {
+                if (getData(row, 2).length() != 0) {
+                    updateColumn(row, 1, "'" + date + "'");
+                    rowsToRemove.add(row - 1);
+                } else {
+                    rowsToRemove.add(row);
+                }
+            }
+System.out.println(getData(row,0).trim().toLowerCase()+" "+row);
+            asd = m.get(getData(row,0).trim().toLowerCase()).toString();
+            //asd=getData(row,0);
+            updateColumn(row, 0, "(" + asd);
+
+
+            asd = getData(row, 2);
+            if (asd.length() == 0) {
+                updateColumn(row, 2, "null");
+            }
+
+            asd = getData(row, 3);
+            if (asd.length() == 0) {
+                updateColumn(row, 3, "null");
+            }
+
+            asd = getData(row, 4);
+            if (asd.length() == 0) {
+                updateColumn(row, 4, "null),");
+            } else {
+                updateColumn(row, 4, asd + "),");
+            }
+
+        }
+        removeRows();
+        writeData();
+    }
+
+    public void addD() throws IOException, CsvException, SQLException, ClassNotFoundException {
+        loadCsvData();
+        dm.open();
+        ResultSet rs;
+        String[]r;
+        Map<String,Integer> m=getM();
+        for(int row=0;row<csvData.size();row++)
+        {
+try {
+    r = csvData.get(row);
+    LocalDate l = LocalDate.parse(r[1]);
+    rs = dm.insertt();
+    rs.moveToInsertRow();
+    rs.updateInt("idStanice", m.get(r[0].trim().toLowerCase()));
+    rs.updateDate("datum", Date.valueOf(r[1]));
+
+    if (!ins(r[2])) {
+        rs.updateDouble("maxTeplota", Double.parseDouble(r[2]));
+    }
+    if (!ins(r[3])) {
+        rs.updateDouble("minTeplota", Double.parseDouble(r[3]));
+    }
+    if (!ins(r[4])) {
+        rs.updateDouble("srazky", Double.parseDouble(r[4]));
+    }
+
+
+    rs.insertRow();
+}
+catch (Exception e)
+{
+    System.out.println(e);
+}
+        }
+
+        dm.close();
+    }
+
+    public boolean ins(String value) throws SQLException {
+
+        return value.length()==0 ||value.equals("null");
+
+
+    }
+
+
 }

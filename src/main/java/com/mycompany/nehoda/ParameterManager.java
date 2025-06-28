@@ -298,7 +298,8 @@ public final class ParameterManager {
     }
 
     public boolean setHeaderIndex(int index, String key) {
-        key=key.trim().toLowerCase();
+        key=key.trim();
+        //System.out.println("klic "+key);
         switch (key) {
             case "p1","id" ->
                 headerColumnsIndexesManager.setId(index);
@@ -411,6 +412,9 @@ public final class ParameterManager {
             }
             case "specifikaceSmerovyPomer"->{
                 headerColumnsIndexesManager.setSpecificDirections(index);
+            }
+            case "specifikacePricinaNehody"->{
+                headerColumnsIndexesManager.setSpecificCause(index);
             }
 
             default -> {

@@ -7,6 +7,7 @@ package com.mycompany.nehoda.DatabaseManagers;
 import com.microsoft.sqlserver.jdbc.SQLServerException;
 import com.mycompany.nehoda.AccidentRecord;
 import com.mycompany.nehoda.DateManager;
+
 import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -17,7 +18,6 @@ import java.util.List;
 import java.util.Map;
 
 /**
- *
  * @author dorgu
  */
 public class AccidentDatabaseManager extends DatabaseManager {
@@ -29,6 +29,33 @@ public class AccidentDatabaseManager extends DatabaseManager {
         Statement stm = connection.createStatement(ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_UPDATABLE);
 
         return stm.executeQuery(command);
+    }
+
+    public ResultSet selectAll(String table, int i) throws SQLException {
+        String command = "SELECT * FROM " + table;
+        Statement stm = connection.createStatement(ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_UPDATABLE);
+
+        return stm.executeQuery(command);
+    }
+
+    public void insert( String value) throws SQLException {
+
+        ResultSet rs = selectAll("stanice", 1);
+        boolean exist = false;
+        while (rs.next()) {
+            if (rs.getString("nazev").toLowerCase().trim().equals(value)) {
+                exist = true;
+                break;
+            }
+
+        }
+
+        if (!exist) {
+            rs.moveToInsertRow();
+            rs.updateString("nazev", value);
+            rs.insertRow();
+        }
+        rs.close();
     }
 
     public ResultSet selectAll(String condition) throws SQLException {
@@ -110,7 +137,8 @@ public class AccidentDatabaseManager extends DatabaseManager {
                     case "kraj":
                         rs.updateInt(headerRow[column], 2);
                         break;
-                    case "maxPrumTeplota", "minPrumTeplota", "PrumSrazky", "MaxPrumSrazky", "MinPrumSrazky", "souradniceX", "souradniceY":
+                    case "maxPrumTeplota", "minPrumTeplota", "PrumSrazky", "MaxPrumSrazky", "MinPrumSrazky",
+                         "souradniceX", "souradniceY":
 
                         rs.updateDouble(headerRow[column], Double.parseDouble(insertedRow[column]));
                         break;
@@ -587,16 +615,18 @@ public class AccidentDatabaseManager extends DatabaseManager {
         }
         rs.close();
     }
-public void updateByID(String ID,String columnName,String value) throws SQLException {
-    ResultSet rs=getById(Long.parseLong(ID));
-    if(rs.next()) {
-        rs.updateString(columnName, value);
-        rs.updateRow();
+
+    public void updateByID(String ID, String columnName, String value) throws SQLException {
+        ResultSet rs = getById(Long.parseLong(ID));
+        if (rs.next()) {
+            rs.updateString(columnName, value);
+            rs.updateRow();
+        }
+        rs.close();
+
+
     }
-    rs.close();
 
-
-}
     public void addValueToDatabase(String value, String headerColumnName, ResultSet rs) throws SQLException {
 
         if (value != null && value.length() != 0) {
@@ -608,11 +638,13 @@ public void updateByID(String ID,String columnName,String value) throws SQLExcep
                 case "datum":
                     rs.updateDate(headerColumnName, Date.valueOf(DateManager.getDefaultDate(value)));
                     break;
-                case "kraj", "hodina", "hustotaProvozu", "usmrcenoOsob", "tezceZranenoOsob", "lehceZranenoOsob","celkovaCastka":
+                case "kraj", "hodina", "hustotaProvozu", "usmrcenoOsob", "tezceZranenoOsob", "lehceZranenoOsob",
+                     "celkovaCastka":
                     rs.updateInt(headerColumnName, Integer.parseInt(value));
                     break;
 
-                case "souradniceX", "souradniceY", "nadmorskaVyska", "wgsX", "wgsY", "maxPrumTeplota", "minPrumTeplota", "PrumSrazky", "MaxPrumSrazky", "MinPrumSrazky":
+                case "souradniceX", "souradniceY", "nadmorskaVyska", "wgsX", "wgsY", "maxPrumTeplota", "minPrumTeplota",
+                     "PrumSrazky", "MaxPrumSrazky", "MinPrumSrazky":
                     rs.updateDouble(headerColumnName, Double.parseDouble(value));
                     break;
 
@@ -622,5 +654,9 @@ public void updateByID(String ID,String columnName,String value) throws SQLExcep
             }
             rs.updateRow();
         }
+    }
+
+    public ResultSet insertt() throws SQLException {
+       return selectAll("pocasi",1);
     }
 }

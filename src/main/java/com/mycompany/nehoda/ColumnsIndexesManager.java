@@ -50,6 +50,7 @@ public class ColumnsIndexesManager {
     private int vehicleNumber;
     private int totalAmount;
     private int result;
+    private int specificCause;
 
 private Map<String[],Integer> columnIndexes;
 
@@ -101,6 +102,15 @@ private Map<String[],Integer> columnIndexes;
         totalAmount = -1;
         specificDirections = -1;
         result = -1;
+        specificCause=-1;
+    }
+
+    public int getSpecificCause() {
+        return specificCause;
+    }
+
+    public void setSpecificCause(int specificCause) {
+        this.specificCause = specificCause;
     }
 
     /**
