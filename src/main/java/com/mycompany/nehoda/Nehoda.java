@@ -32,16 +32,44 @@ public class Nehoda {
 
            // System.out.println(Date.valueOf("2020-01-02"));
 //data/predpovedNehody/nehodyVsechny.csv
-            CsvManager cm = new CsvManager(new File("nehodyPocasiUpraveno.csv"), ';');
-
-            //cm.addD();
+            CsvManager cm = new CsvManager(new File(""), ';');
             //cm.addStations();
 
-            //cm.udpateWeatherInput();
+            //uprava souboru
+            //cm.updateOlderCsvFile();
+            //cm.updateCsvFile();
+
             //cm.checkHeaderRTest();
 
+            //databaze
+           // cm.loadAllToDatabase();
+            //cm.updateDatabaseColumnByID("lehceZranenoOsob");
+            //cm.updateDatabaseColumnByID("tezceZranenoOsob");
+            //cm.updateDatabaseColumnByID("usmrcenoOsob");
+            //cm.updateDatabaseColumnByID("hmotnaCastka");
 
+            //pocasi
+            //cm.getM();
+            //cm.addD();
+
+            //useky
+            //cm.addUsek();
+            //cm.addAdditionalUsek();
+            //cm.addDensityRoad();
+            //cm.updateCol();
+            //cm.removeDupl();
+//cm.addCoordinatesToDensity(1,0,"hustotaVysledek.csv");
+            //cm.addD();
+
+
+            //cm.udpateWeatherInput();
+
+
+            //specifikace
+            cm.checkHeaderRTest();
             //cm.updateDatabaseColumnByID("specifikacePricinaNehody");
+            //cm.updateDatabaseColumnByID("specifikacePricinaNehody");
+            //cm.updateDatabaseColumnByID("specifikaceSmerovyPomer");
             //cm.AddSpecificColumn();
             /*DatabaseManager db=new DatabaseManager();
 
@@ -51,7 +79,7 @@ public class Nehoda {
             //cm.createDupliciteRecords(20);
             //cm.cccreateAccidentRecords(50,50);
             //cm.vypiss();
-            // cm.loadAllToDatabase();
+            //cm.loadAllToDatabase();
             //cm.loadFromDatabase(AccidentRecord.allHeaderRow,false);
             //cm.vypiss();
             //cm.loadInfo3ToDatabase();
@@ -65,7 +93,7 @@ public class Nehoda {
             //cm.loadAllToDatabase();
             //obecne
             //cm.removeMissingValues(22);
-            cm.updateTime(2);
+            //cm.updateTime(2);
             //cm.addId();
             //cm.updateOlderCsvFile();
             //cm.updateCsvFile();
@@ -84,11 +112,12 @@ public class Nehoda {
             //cm.createAccidentRecords();
             //cm.addId();
 
-            //VehicleCsvFileManager vcm=new VehicleCsvFileManager(new File("IVozidla.csv"), ';');           
-            //vcm.addVehicleTypeToDatabase();
+            //VehicleCsvFileManager vcm=new VehicleCsvFileManager(new File("C:/Users/dorgu/Downloads/hotovo/vozidla24.csv"), ';');
             //vcm.updateCsvFile();
-            //CoordinatesCsvManager csm=new CoordinatesCsvManager(new File("souradnice.csv"), ';');
-            // csm.addCoordinatesDataToDatabase();
+            //vcm.addVehicleTypeToDatabase();
+
+            //CoordinatesCsvManager csm=new CoordinatesCsvManager(new File("C:/Users/dorgu/Downloads/hotovo/souradnice25.csv"), ';');
+            //csm.addCoordinatesDataToDatabase();
             //cm.sortByCoordinates(755830,1166150,500);
 
 

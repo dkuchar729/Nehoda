@@ -33,7 +33,7 @@ public class AccidentDatabaseManager extends DatabaseManager {
 
     public ResultSet selectAll(String table, int i) throws SQLException {
         String command = "SELECT * FROM " + table;
-        Statement stm = connection.createStatement(ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_UPDATABLE);
+        Statement stm = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
 
         return stm.executeQuery(command);
     }
@@ -130,7 +130,7 @@ public class AccidentDatabaseManager extends DatabaseManager {
                         rs.updateDate(headerRow[column], Date.valueOf(DateManager.getBaseDate(insertedRow[column])));
                         break;
 
-                    case "hodina", "hustotaProvozu":
+                    case "hodina", "hustotaProvozu","pocetVozidel","tezceZranenoOsob","lehceZranenoOsob","usmrcenoOsob","hmotnaCastka":
                         rs.updateInt(headerRow[column], Integer.parseInt(insertedRow[column]));
                         break;
 
@@ -138,7 +138,7 @@ public class AccidentDatabaseManager extends DatabaseManager {
                         rs.updateInt(headerRow[column], 2);
                         break;
                     case "maxPrumTeplota", "minPrumTeplota", "PrumSrazky", "MaxPrumSrazky", "MinPrumSrazky",
-                         "souradniceX", "souradniceY":
+                         "souradniceX", "souradniceY","wgsX","wgsY","nadmorskaVyska":
 
                         rs.updateDouble(headerRow[column], Double.parseDouble(insertedRow[column]));
                         break;
@@ -626,6 +626,16 @@ public class AccidentDatabaseManager extends DatabaseManager {
 
 
     }
+    public void updateByID(String ID, String columnName, int value) throws SQLException {
+        ResultSet rs = getById(Long.parseLong(ID));
+        if (rs.next()) {
+            rs.updateInt(columnName, value);
+            rs.updateRow();
+        }
+        rs.close();
+
+
+    }
 
     public void addValueToDatabase(String value, String headerColumnName, ResultSet rs) throws SQLException {
 
@@ -657,6 +667,23 @@ public class AccidentDatabaseManager extends DatabaseManager {
     }
 
     public ResultSet insertt() throws SQLException {
-       return selectAll("pocasi",1);
+
+        Statement stm = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+
+        return stm.executeQuery("SELECT TOP 1 * FROM pocasi");
+
+    }
+
+    public ResultSet getById(String table,String idColumnName,String id) throws SQLException {
+        String command = "SELECT * FROM "+table+" WHERE "+idColumnName+"='" + id+"'";
+        Statement stm = connection.createStatement(ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_UPDATABLE);
+
+        return stm.executeQuery(command);
+    }
+
+    public ResultSet checkExistWeather(int id,String date) throws SQLException {
+        String command = "SELECT * FROM pocasi WHERE idStanice="+id+" AND datum='" + date+"'";
+        Statement stm = connection.createStatement(ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_UPDATABLE);
+        return stm.executeQuery(command);
     }
 }
