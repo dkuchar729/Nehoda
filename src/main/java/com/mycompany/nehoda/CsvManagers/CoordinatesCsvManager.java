@@ -12,7 +12,7 @@ import java.sql.SQLException;
 
 /**
  *
- * @author dorgu
+ *@author David
  */
 public class CoordinatesCsvManager extends CsvManager {
 

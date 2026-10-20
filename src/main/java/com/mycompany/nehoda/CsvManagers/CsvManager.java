@@ -26,7 +26,7 @@ import java.util.*;
 import java.sql.Date;
 
 /**
- * @author dorgu
+ * @author David
  */
 public class CsvManager {
 
@@ -84,7 +84,7 @@ public class CsvManager {
             if (!updateHours(row, pm.getIndexes().getTime())) {
 
 
-                //System.out.println( getData(row, pm.getIndexes().getId()));
+               
                 //rowsToRemove.add(row);
                 //continue;
             }
@@ -437,12 +437,12 @@ public class CsvManager {
 
             if (allRecords.get(i).length < 24) {
                 c++;
-                //System.out.println(i + " " + allRecords.get(i)[22]);
+               
             }
             vysledek.csvData.add(allRecords.get(i));
 
         }
-        System.out.println("c " + c);
+       
 
         vysledek.writeData();
 
@@ -514,12 +514,10 @@ public class CsvManager {
 
             if (allRecords.get(i).length < 24) {
                 c++;
-                //System.out.println(i + " " + allRecords.get(i)[22]);
             }
             vysledek.csvData.add(allRecords.get(i));
 
         }
-        System.out.println("c " + c);
 
         vysledek.writeData();
 
@@ -530,9 +528,7 @@ public class CsvManager {
 
         for (int i = 0; i < header.length; i++) {
             if (!pm.setHeaderIndex(i, header[i])) {
-                //System.out.println(header[i]);
-                // System.out.println(i+" "+pm.setHeaderIndex(i, header[i]));
-                //System.out.println(getData(0,i));
+               
                 columnsToRemove.add(i);
             }
 
@@ -687,7 +683,7 @@ public class CsvManager {
     }
 
     public void updateColumn(int row, int column, String value) throws IOException, CsvException {
-        //System.out.println(value + " " + row + " " + column);
+        
         csvData.get(row)[column] = value;
     }
 
@@ -1208,7 +1204,7 @@ public class CsvManager {
             }
 
         }
-        System.out.println(rowsToRemove.size());
+        
         removeRows();
         writeData();
     }
@@ -1229,7 +1225,7 @@ public class CsvManager {
             }
 
         }
-        System.out.println(counter);
+        
         dm.close();
 
     }
@@ -1247,7 +1243,6 @@ public class CsvManager {
         dm.open();
         loadCsvData();
         updateHeader();
-        System.out.println(pm.getIndexes().getId());
         for (int row = 1; row < csvData.size(); row++) {
             //dm.updateByID(getData(row, pm.getIndexes().getId()), columnName, getData(row, pm.getIndexes().getMinorAccident()));
             //dm.updateByID(getData(row, pm.getIndexes().getId()), columnName, Integer.parseInt(getData(row, pm.getIndexes().getMinorAccident())));
@@ -1258,29 +1253,9 @@ public class CsvManager {
         }
         dm.close();
 
-        //System.out.println(pm.getIndexes().getSpecificCause());
     }
 
-    public void vypiss() throws SQLException, ClassNotFoundException {
-        /* dm.open();
-        dm.getRecords(3.7, -3.12, 0.31, -1164718, -755229, 10000);
-        dm.close();*/
-        dm.open();
-        List<List<String[]>> l = dm.getDataToAccidentExecution(AccidentRecord.headerRow, 100);
-        dm.close();
-
-        for (int a = 0; a < l.size(); a++) {
-            for (int c = 0; c < l.get(a).size(); c++) {
-                for (int b = 0; b < l.get(a).get(c).length; b++) {
-                    System.out.print(l.get(a).get(c)[b] + " ");
-                }
-                System.out.println();
-            }
-            System.out.println("");
-
-        }
-
-    }
+  
 
     public void createDupliciteRecords(int result) throws IOException, CsvException {
         loadCsvData();
@@ -1371,7 +1346,7 @@ public class CsvManager {
         //addValue(2,mapValue(index,getData(2,index)));
 
         writeData();
-        //System.out.println(ColumnIndexesRecord.getIndex(AvailableColumns.PRICINA_NEHODY));
+        
 
     }
 
@@ -1427,7 +1402,7 @@ public class CsvManager {
                     rowsToRemove.add(row);
                 }
             }
-            System.out.println(getData(row, 0).trim().toLowerCase() + " " + row);
+           
             asd = m.get(getData(row, 0).trim().toLowerCase()).toString();
             //asd=getData(row,0);
             updateColumn(row, 0, "(" + asd);
@@ -1662,7 +1637,7 @@ public class CsvManager {
                     rs.close();
                 }
                 else {
-                    System.out.println("usek: "+ar[0]);
+                  
                 }
                 }
             }

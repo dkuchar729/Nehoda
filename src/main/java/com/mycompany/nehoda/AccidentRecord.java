@@ -10,10 +10,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-/**
- *
- * @author dorgu
- */
+
 public class AccidentRecord {
 
     public static List<String> headerRow = new LinkedList<>(Arrays.asList("hodina", "umisteniObec", "druhNehody", "zavineniNehody", "alkohol", "pricinaNehody", "povrchVozovky", "stavVozovky", "povetrnostniPodminky", "viditelnost", "rozhled", "deleniKomunikace", "situovaniNehody", "specifickeMisto", "smerovyPomer", "druhKomunikace", "den", "souradniceX", "souradniceY", "maxPrumTeplota", "minPrumTeplota", "prumSrazky"));

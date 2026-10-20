@@ -8,7 +8,7 @@ import java.io.File;
 
 /**
  *
- * @author dorgu
+ * @author David
  */
 public enum WeatherInfo {
     JIHOCESKY(new File("jihoceskyKrajPocasi.csv"),0);

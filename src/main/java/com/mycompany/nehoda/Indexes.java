@@ -6,7 +6,7 @@ package com.mycompany.nehoda;
 
 /**
  *
- * @author dorgu
+ * @author David
  */
 public class Indexes {
 

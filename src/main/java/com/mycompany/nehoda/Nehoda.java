@@ -21,9 +21,7 @@ import java.util.Map;
 import com.mycompany.nehoda.DatabaseManagers.DatabaseManager;
 import org.apache.commons.lang3.ArrayUtils;
 
-/**
- * @author dorgu
- */
+
 public class Nehoda {
 
     public static void main(String[] args) {
@@ -36,13 +34,13 @@ public class Nehoda {
             //cm.addStations();
 
             //uprava souboru
-            //cm.updateOlderCsvFile();
+            cm.updateOlderCsvFile();
             //cm.updateCsvFile();
 
             //cm.checkHeaderRTest();
 
             //databaze
-           // cm.loadAllToDatabase();
+           //cm.loadAllToDatabase();
             //cm.updateDatabaseColumnByID("lehceZranenoOsob");
             //cm.updateDatabaseColumnByID("tezceZranenoOsob");
             //cm.updateDatabaseColumnByID("usmrcenoOsob");
@@ -58,7 +56,7 @@ public class Nehoda {
             //cm.addDensityRoad();
             //cm.updateCol();
             //cm.removeDupl();
-//cm.addCoordinatesToDensity(1,0,"hustotaVysledek.csv");
+            //cm.addCoordinatesToDensity(1,0,"hustotaVysledek.csv");
             //cm.addD();
 
 
@@ -66,7 +64,7 @@ public class Nehoda {
 
 
             //specifikace
-            cm.checkHeaderRTest();
+            //cm.checkHeaderRTest();
             //cm.updateDatabaseColumnByID("specifikacePricinaNehody");
             //cm.updateDatabaseColumnByID("specifikacePricinaNehody");
             //cm.updateDatabaseColumnByID("specifikaceSmerovyPomer");

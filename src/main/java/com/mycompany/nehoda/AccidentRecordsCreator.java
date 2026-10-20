@@ -9,9 +9,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author dorgu
- */
+
 public class AccidentRecordsCreator {
 
     private final String[] row;

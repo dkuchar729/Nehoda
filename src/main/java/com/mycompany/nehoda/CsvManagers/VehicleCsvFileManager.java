@@ -14,7 +14,7 @@ import com.mycompany.nehoda.DatabaseManagers.VehicleDatabaseManager;
 
 /**
  *
- * @author dorgu
+ *@author David
  */
 public class VehicleCsvFileManager extends CsvManager {
 

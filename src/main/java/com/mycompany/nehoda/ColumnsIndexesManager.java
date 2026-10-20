@@ -6,10 +6,7 @@ package com.mycompany.nehoda;
 
 import java.util.Map;
 
-/**
- *
- * @author dorgu
- */
+
 public class ColumnsIndexesManager {
 
     private int id;

@@ -7,9 +7,7 @@ package com.mycompany.nehoda;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * @author dorgu
- */
+
 public class AccidentRecordManager {
 
    public   AccidentRecordsCreator lastAccidentRecordsCreator;

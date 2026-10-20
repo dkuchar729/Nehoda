@@ -10,10 +10,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- *
- * @author dorgu
- */
+
 public final class ParameterManager {
 
     private ColumnsIndexesManager headerColumnsIndexesManager;
@@ -299,7 +296,6 @@ public final class ParameterManager {
 
     public boolean setHeaderIndex(int index, String key) {
         key=key.trim();
-        //System.out.println("klic "+key);
         switch (key) {
             case "p1","id" ->
                 headerColumnsIndexesManager.setId(index);

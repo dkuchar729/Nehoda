@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author dorgu
+ * @author David
  */
 public class AccidentDatabaseManager extends DatabaseManager {
 
@@ -388,10 +388,8 @@ public class AccidentDatabaseManager extends DatabaseManager {
                     while (rsAccident.next()) {
 
                         if (!idList.contains(rsAccident.getLong("id"))) {
-                            //System.out.println(idList.contains(rsAccident.getLong("id")));
                             idList.add(rsAccident.getLong("id"));
-                            //System.out.println(rsAccident.getLong("id") + " " + rsAll.getInt("hodina") + " " + rsAccident.getInt("hodina"));
-                            //System.out.println(idList.contains(rsAccident.getLong("id")));
+                          
 
                             row = fillRow(headerRow, true, rsAccident);
 
@@ -411,34 +409,7 @@ public class AccidentDatabaseManager extends DatabaseManager {
 
             }
         }
-        /* for (int a = 0; a < data.size(); a++) {
-            for (int b = 0; b < data.get(a).size(); b++) {
-               
-                 if (data.get(a).get(b)[22].equals("20106220806")) {
-                        System.out.println("data " +a+" "+data.get(a).size());
-                        System.out.println("tadyyyy 20106220806" + " " + a);
-                    }
-               
-            }
-        }*/
-
- /*  for (int b = 0; b < data.get(70).size(); b++) {
-
-            if (data.get(70).get(b)[22].equals("20106220757")) {
-                System.out.println("data 70 " + data.get(70).size());
-                System.out.println("tadyyyy 20106220757" + " " + 70);
-            }
-
-        }
-        System.out.println();
-        for (int b = 0; b < data.get(94).size(); b++) {
-
-            if (data.get(94).get(b)[22].equals("20106220757")) {
-                System.out.println("data 94 " + data.get(94).size());
-                System.out.println("tadyyyy 20106220757" + " " + 94);
-            }
-
-        }*/
+       
         return data;
     }
 
@@ -461,10 +432,8 @@ public class AccidentDatabaseManager extends DatabaseManager {
                     while (rsAccident.next()) {
 
                         if (!idList.contains(rsAccident.getLong("id"))) {
-                            //System.out.println(idList.contains(rsAccident.getLong("id")));
                             idList.add(rsAccident.getLong("id"));
-                            //System.out.println(rsAccident.getLong("id") + " " + rsAll.getInt("hodina") + " " + rsAccident.getInt("hodina"));
-                            //System.out.println(idList.contains(rsAccident.getLong("id")));
+                           
 
                             row = fillRow(headerRow, true, rsAccident);
 
@@ -491,34 +460,7 @@ public class AccidentDatabaseManager extends DatabaseManager {
 
             }
         }
-        /* for (int a = 0; a < data.size(); a++) {
-            for (int b = 0; b < data.get(a).size(); b++) {
-               
-                 if (data.get(a).get(b)[22].equals("20106220806")) {
-                        System.out.println("data " +a+" "+data.get(a).size());
-                        System.out.println("tadyyyy 20106220806" + " " + a);
-                    }
-               
-            }
-        }*/
-
- /*  for (int b = 0; b < data.get(70).size(); b++) {
-
-            if (data.get(70).get(b)[22].equals("20106220757")) {
-                System.out.println("data 70 " + data.get(70).size());
-                System.out.println("tadyyyy 20106220757" + " " + 70);
-            }
-
-        }
-        System.out.println();
-        for (int b = 0; b < data.get(94).size(); b++) {
-
-            if (data.get(94).get(b)[22].equals("20106220757")) {
-                System.out.println("data 94 " + data.get(94).size());
-                System.out.println("tadyyyy 20106220757" + " " + 94);
-            }
-
-        }*/
+        
         return data;
     }
 
@@ -539,10 +481,8 @@ public class AccidentDatabaseManager extends DatabaseManager {
                 while (rsAccident.next()) {
 
                     if (!idList.contains(rsAccident.getLong("id"))) {
-                        //System.out.println(idList.contains(rsAccident.getLong("id")));
                         idList.add(rsAccident.getLong("id"));
-                        //System.out.println(rsAccident.getLong("id") + " " + rsAll.getInt("hodina") + " " + rsAccident.getInt("hodina"));
-                        //System.out.println(idList.contains(rsAccident.getLong("id")));
+                      
 
                         row = fillRow(headerRow, true, rsAccident);
 
@@ -565,41 +505,7 @@ public class AccidentDatabaseManager extends DatabaseManager {
 
             }
         }
-        /* for (int a = 0; a < data.size(); a++) {
-            for (int b = 0; b < data.get(a).size(); b++) {
-                System.out.println(a);
-                System.out.println(data.get(a).get(b)[17]);
-                System.out.println(data.get(a).get(b)[18]);
-               System.out.println(data.get(a).get(b)[22]);
-                 System.out.println(data.get(a).get(b)[19]);
-                 System.out.println(data.get(a).get(b)[20]);
-                 System.out.println(data.get(a).get(b)[21]);
-                 /*if (data.get(a).get(b)[22].equals("20106220806")) {
-                        System.out.println("data " +a+" "+data.get(a).size());
-                        System.out.println("tadyyyy 20106220806" + " " + a);
-                    }*/
-
-        //}
-        // System.out.println();
-        //}
-
-        /*  for (int b = 0; b < data.get(70).size(); b++) {
-
-            if (data.get(70).get(b)[22].equals("20106220757")) {
-                System.out.println("data 70 " + data.get(70).size());
-                System.out.println("tadyyyy 20106220757" + " " + 70);
-            }
-
-        }
-        System.out.println();
-        for (int b = 0; b < data.get(94).size(); b++) {
-
-            if (data.get(94).get(b)[22].equals("20106220757")) {
-                System.out.println("data 94 " + data.get(94).size());
-                System.out.println("tadyyyy 20106220757" + " " + 94);
-            }
-
-        }*/
+        
         return data;
     }
 

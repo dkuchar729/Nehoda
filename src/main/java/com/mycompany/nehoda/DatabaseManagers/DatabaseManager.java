@@ -15,7 +15,7 @@ import java.sql.Statement;
 
 /**
  *
- * @author dorgu
+ * @author David
  */
 public class DatabaseManager {
 

@@ -9,7 +9,7 @@ import java.time.format.DateTimeFormatter;
 
 /**
  *
- * @author dorgu
+ * @author David
  */
 public class DateManager {
    public static final DateTimeFormatter baseDf=DateTimeFormatter.ofPattern("dd.MM.yyyy"); 
