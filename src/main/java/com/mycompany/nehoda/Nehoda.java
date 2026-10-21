@@ -110,11 +110,11 @@ public class Nehoda {
             //cm.createAccidentRecords();
             //cm.addId();
 
-            //VehicleCsvFileManager vcm=new VehicleCsvFileManager(new File("C:/Users/dorgu/Downloads/hotovo/vozidla24.csv"), ';');
+            //VehicleCsvFileManager vcm=new VehicleCsvFileManager(new File(""), ';');
             //vcm.updateCsvFile();
             //vcm.addVehicleTypeToDatabase();
 
-            //CoordinatesCsvManager csm=new CoordinatesCsvManager(new File("C:/Users/dorgu/Downloads/hotovo/souradnice25.csv"), ';');
+            //CoordinatesCsvManager csm=new CoordinatesCsvManager(new File(""), ';');
             //csm.addCoordinatesDataToDatabase();
             //cm.sortByCoordinates(755830,1166150,500);
 
